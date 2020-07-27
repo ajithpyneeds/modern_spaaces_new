@@ -104,11 +104,12 @@ body {
 
     i {
         color: $black;
-        padding-left: 1.83vw;
+        margin-left: 1.83vw;
     }
 
     i:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
+        color: #ccc;
     }
 }
 
@@ -405,11 +406,15 @@ body {
             line-height: 1.19;
         }
 
-        h1 {
-            margin-bottom: 2vw;
-            font-size: $h1;
-            font-weight: $fontBold;
-            letter-spacing: 1vw;
+        .urbanestLogo {
+            height: 3vw;
+            width: 22vw;
+            margin-bottom: 2.3vw;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         p {
@@ -419,7 +424,7 @@ body {
             line-height: 1.4;
         }
 
-        .pBlod {
+        .pBold {
             margin-bottom: 2.5vw;
             font-weight: $fontBold;
             line-height: 1.4;
@@ -463,17 +468,27 @@ body {
 .nextPro {
     margin-top: 4.53vw ;
     margin-right: 3.02vw;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .downArrow {
+        width: 2vw;
+        height: 4vw;
+        margin-right: .7vw;
+        margin-top: .7vw;
+        
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 
     p {
         font-size: .78vw;
         line-height: 5.33;
-    }
-
-    .fa-long-arrow-down {
-        margin-right: .5vw;
-        font-size: $p   ;
-        font-weight: 300;
+        text-transform: uppercase;
     }
 }
 
@@ -502,11 +517,15 @@ body {
                         line-height: 1.19;
                     }
             
-                    h1 {
-                        margin-bottom: 2vw;
-                        font-size: $h1;
-                        font-weight: $fontBold;
-                        letter-spacing: 1vw;
+                    .urbanestLogo {
+                        height: 3vw;
+                        width: 22vw;
+                        margin-bottom: 2.3vw;
+            
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
             
                     p {
@@ -516,7 +535,7 @@ body {
                         line-height: 1.4;
                     }
             
-                    .pBlod {
+                    .pBold {
                         margin-bottom: 2.5vw;
                         font-weight: $fontBold;
                         line-height: 1.4;
@@ -560,18 +579,28 @@ body {
             
             .nextPro {
                 margin-top: 4.53vw ;
-                margin-right: 10vw;
-                float: right;
+                margin-right: 3.02vw;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            
+                .downArrow {
+                    width: 2vw;
+                    height: 4vw;
+                    margin-right: .7vw;
+                    margin-top: .7vw;
+                    
+            
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
             
                 p {
                     font-size: .78vw;
                     line-height: 5.33;
-                }
-            
-                .fa-long-arrow-down {
-                    margin-right: .5vw;
-                    font-size: $p   ;
-                    font-weight: 300;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -585,7 +614,7 @@ body {
     color: $black;
     font-family: Titillium Web, sans-serif;
     display: flex;
-    margin-top: 13vw;
+    margin-top: 8vw;
     margin-bottom: 11.56vw;
 
     .soultree-img {
@@ -600,23 +629,27 @@ body {
     }
 
     .soultree-descrip {
-        margin-top: 6vw;
+        margin-top: 2.34vw;
         width: 41.67vw;
         padding-right: 8.28vw;
         padding-left: 5.83vw;
 
         h2 {
-            margin-bottom: 2vw;
+            margin-bottom: 1.2vw;
             font-size: $h2;
             font-weight: $fontBold;
             line-height: 1.19;
         }
 
-        h1 {
-            margin-bottom: 2vw;
-            font-size: $h1;
-            font-weight: $fontBold;
-            letter-spacing: 1vw;
+        .soultreeLogo {
+            height: 9.06vw;
+            width: 18.5vw;
+            margin-bottom: 1.2vw;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         p {
@@ -626,7 +659,7 @@ body {
             line-height: 1.4;
         }
 
-        .pBlod {
+        .pBold {
             margin-bottom: 2.5vw;
             font-weight: $fontBold;
             line-height: 1.4;
@@ -683,23 +716,27 @@ body {
                 }
             
                 .soultree-descrip {
-                    margin-top: 6vw;
-                    width: 100vw;
-                    padding: 0 30vw 0 10vw;
-                    order: 1;
+                    margin-top: 2.34vw;
+                    width: 41.67vw;
+                    padding-right: 8.28vw;
+                    padding-left: 5.83vw;
             
                     h2 {
-                        margin-bottom: 2vw;
+                        margin-bottom: 1.2vw;
                         font-size: $h2;
                         font-weight: $fontBold;
                         line-height: 1.19;
                     }
             
-                    h1 {
-                        margin-bottom: 2vw;
-                        font-size: $h1;
-                        font-weight: $fontBold;
-                        letter-spacing: 1vw;
+                    .soultreeLogo {
+                        height: 9.06vw;
+                        width: 18.5vw;
+                        margin-bottom: 1.2vw;
+            
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
             
                     p {
@@ -709,7 +746,7 @@ body {
                         line-height: 1.4;
                     }
             
-                    .pBlod {
+                    .pBold {
                         margin-bottom: 2.5vw;
                         font-weight: $fontBold;
                         line-height: 1.4;
@@ -861,7 +898,7 @@ body {
     
     .about-hover-card:hover {
         box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-        transform: translateY(-3vw);
+        transform: translateY(-2.2vw);
         transition: 600ms transform;
         border: solid 1px #ebebeb;
         color: $black;
@@ -968,7 +1005,7 @@ body {
                     
                     .about-hover-card:hover {
                         box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-                        transform: translateY(-3vw);
+                        transform: translateY(-2.2vw);
                         transition: 600ms transform;
                         border: solid 1px #ebebeb;
                         color: $black;
@@ -1074,7 +1111,7 @@ body {
         }
         
         .blog-hover:hover {
-            transform: translateY(-4vw);
+            transform: translateY(-1.5vw);
             transition: 600ms transform;
             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
 
@@ -1256,7 +1293,7 @@ body {
                         }
                         
                         .blog-hover:hover {
-                            transform: translateY(-4vw);
+                            transform: translateY(-1.5vw);
                             transition: 600ms transform;
                             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
                 
@@ -1340,7 +1377,7 @@ body {
         input {
             border: none;
             padding-bottom: .5vw;
-            width: 90%;
+            width: 88%;
             border-bottom: 1px solid $black;
             font-size: $p;
             font-weight: $fontThin;
@@ -1468,6 +1505,10 @@ body {
     flex: 1;
     font-size: $p;
     line-height: 2;
+
+    a {
+        color: $white-two;
+    }
 }
 
 .vertical-line {
@@ -1532,6 +1573,10 @@ body {
                 flex: 0;
                 font-size: $p;
                 line-height: 2;
+
+                a {
+                    color: $white-two;
+                }
             }
             
             .vertical-line {
