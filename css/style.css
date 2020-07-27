@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .btn1 {
@@ -29,9 +29,9 @@ body {
 }
 
 .btn1 p::after {
-  content: '\f054';
+  content: '\f105';
   font-family: fontAwesome;
-  font-size: .8vw;
+  font-size: 1vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -481,9 +481,9 @@ body {
 }
 
 .urbanest .urbanest-descrip .btn1 p::after {
-  content: '\f054';
+  content: '\f105';
   font-family: fontAwesome;
-  font-size: .8vw;
+  font-size: 1vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -582,9 +582,9 @@ body {
     letter-spacing: .25vw;
   }
   .urbanest .urbanest-descrip .btn1 p::after {
-    content: '\f054';
+    content: '\f105';
     font-family: fontAwesome;
-    font-size: .8vw;
+    font-size: 1vw;
     font-weight: 300;
     padding-left: .6vw;
   }
@@ -688,9 +688,9 @@ body {
 }
 
 .soultree .soultree-descrip .btn1 p::after {
-  content: '\f054';
+  content: '\f105';
   font-family: fontAwesome;
-  font-size: .8vw;
+  font-size: 1vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -777,9 +777,9 @@ body {
     letter-spacing: .25vw;
   }
   .soultree .soultree-descrip .btn1 p::after {
-    content: '\f054';
+    content: '\f105';
     font-family: fontAwesome;
-    font-size: .8vw;
+    font-size: 1vw;
     font-weight: 300;
     padding-left: .6vw;
   }
@@ -1071,9 +1071,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .blog .arrows i {
@@ -1192,9 +1192,9 @@ body {
 }
 
 .swiper-container2 .swiper-slide .blog-hover:hover .btn .btn1 p::after {
-  content: '\f054';
+  content: '\f105';
   font-family: fontAwesome;
-  font-size: .8vw;
+  font-size: 1vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -1345,9 +1345,9 @@ body {
     -webkit-text-fill-color: transparent;
   }
   .swiper-container2 .swiper-slide .blog-hover .btn .btn1 p::after {
-    content: '\f054';
+    content: '\f105';
     font-family: fontAwesome;
-    font-size: .8vw;
+    font-size: 1vw;
     font-weight: 300;
     padding-left: .6vw;
   }
