@@ -31,6 +31,10 @@ $fontThin: 300;
     text-decoration: none;
 }
 
+body {
+    overflow: hidden;
+}
+
 .btn1 {
     display: flex;
     border: none;
@@ -1001,9 +1005,10 @@ body {
 
 .blog .arrows {
     width: 94%;
+    margin: auto;
     text-align: center;
     display: flex;
-    justify-content: end;
+    justify-content: right;
 }
 
 

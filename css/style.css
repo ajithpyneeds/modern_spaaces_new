@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 .btn1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1062,13 +1066,14 @@ body {
 
 .blog .arrows {
   width: 94%;
+  margin: auto;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .blog .arrows i {
