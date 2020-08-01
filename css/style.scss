@@ -35,6 +35,38 @@ body {
     overflow-x: hidden;
 }
 
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    z-index: 2000;
+    background: $black;
+  }
+
+.overlay:nth-child(2) {
+    text-align: center;
+    margin: auto;
+     img {
+         margin-top: 6%;
+     }
+}
+  
+  .first {
+    top: 0;
+  }
+  
+  .second {
+    top: 33.3%
+  }
+  
+  .third {
+    top: 66.6%;
+  }
+
+
+
 .btn1 {
     display: flex;
     border: none;
@@ -57,9 +89,213 @@ body {
     }
 }
 
-body {
-    overflow-x: hidden;
+
+
+
+
+
+$gray: #808080;
+
+$text-arrow-space: 16px;
+$shaft-width: 1px;
+$newshaft-width: 64px;
+$shaft-thickness: 1px;
+$arrow-head-width: .42vw;
+$arrow-head-thickness: $shaft-thickness;
+
+
+
+// Base
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+
+// The Arrow
+
+.the-arrow {
+  width: $shaft-width;
+  transition: all 0.2s;
+ 
+  &.-left {
+    position: absolute;
+    top: 60%;
+    left: 0;
+
+    > .shaft {
+      width: 0;
+      background-color: $black;
+      
+      &:before,
+      &:after {
+        width: 0;
+        background-color: $black;
+      }
+
+      &:before {
+        transform: rotate(0);
+      }
+
+      &:after {
+        transform: rotate(0);
+      }
+    }
+  }
+  
+  &.-right {
+    top: 0;
+    left: .8vw;
+    
+    > .shaft {
+      width: $shaft-width;
+      transition-delay: 0.2s;
+
+      &:before,
+      &:after { 
+        width: $arrow-head-width;
+        transition-delay: 0.3s;
+        transition: all 0.5s;
+      }
+      
+      &:before {
+        transform: rotate(40deg);
+      }
+      
+      &:after {
+        transform: rotate(-40deg);
+      }
+    }
+  }
+
+  > .shaft {
+    background-color: $black;
+    display: block;
+    height: $shaft-thickness;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0;
+    will-change: transform;
+
+    &:before,
+    &:after {
+      background-color: $black;
+      content: '';
+      display: block;
+      height: $arrow-head-thickness;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.2s;
+      transition-delay: 0;
+    }
+
+    &:before {
+      transform-origin: top right;
+    }
+
+    &:after {
+      transform-origin: bottom right;
+    }
+  }
+}
+
+
+
+// Animated Arrow Button
+
+.animated-arrow {
+  display: inline-block;
+  font-size: .8vw;
+        font-weight: $fontBold;
+        letter-spacing: .25vw;
+        background: linear-gradient(to right, $brownish-orange-two, $army-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+  
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+
+    
+    > .the-arrow.-left {
+      > .shaft {
+        width: $newshaft-width;
+        transition-delay: 0.1s;
+        // background-color: $gray;
+
+        &:before,
+        &:after {
+          width: $arrow-head-width;
+          transition-delay: 0.1s;
+        //   background-color: $gray;
+        }
+
+        &:before {
+          transform: rotate(40deg);
+        }
+
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+    
+    > .main {
+      transform: translateX($shaft-width + $text-arrow-space);
+      transform: translateX($newshaft-width + $text-arrow-space);
+      
+      > .the-arrow.-right {
+        > .shaft {
+          width: 0;
+          transform: translateX(200%);
+          transition-delay: 0;
+          
+          &:before,
+          &:after {
+            width: 0;
+            transition-delay: 0;
+            transition: all 0.1s;
+          }
+
+          &:before {
+            transform: rotate(0);
+          }
+
+          &:after {
+            transform: rotate(0);
+          }
+        }
+      }
+    }
+  }
+  
+  > .main {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    
+    // > .text {
+    //   margin: 0 $text-arrow-space 0 0;
+    //   line-height: 1;
+    // }
+    
+    > .the-arrow {
+      position: relative;
+    }
+  }
+}
+
+
+
+
+
+
+
 
 // Navbar Starts
 .nav-bar {
@@ -465,6 +701,13 @@ body {
     }
 }
 
+$circle-w: 3vw;
+$circle-bg: $black;
+$arrow-bg: $white-two;
+$bezier: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$bezier-bounce: cubic-bezier(.87,-.41,.19,1.44);
+$anim-timing: 3s;
+
 .nextPro {
     margin-top: 4.53vw ;
     margin-right: 3.02vw;
@@ -490,6 +733,126 @@ body {
         line-height: 5.33;
         text-transform: uppercase;
     }
+
+
+
+
+    .ico {
+        margin: 1% 1.5% 0 0;
+        text-align: center;
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: url("#goo");
+        .circle {
+          background: $circle-bg;
+          border-radius: 50%;
+          display: inline-block;
+          height: $circle-w;
+          width: $circle-w;
+          
+          position: absolute;
+          top: 50%;
+          left:50%;
+          transform: translateX(-50%) translateY(-50%);
+          transform-origin: 0%;
+          
+          &.circle-top {
+            height: $circle-w / 2;
+            width: $circle-w / 2;
+            animation: blob-1-anim $anim-timing $bezier infinite;
+            z-index: 0;
+            top:0;
+          }
+          &.circle-bottom {
+            height: $circle-w / 2.8;
+            width: $circle-w / 2.4;
+            animation: blob-2-anim $anim-timing $bezier  infinite;
+            z-index: 9;
+            bottom:0px;
+            top: -2px;
+          }
+          
+        }
+        
+        
+        .st-arrow{
+          fill:$arrow-bg;
+          animation: scrolly $anim-timing $bezier forwards infinite;
+          perspective: 9000px;
+          transform: translateZ(0);
+          transform-origin: bottom;
+        }
+      }
+      
+      .svg {z-index:9;position:relative;}
+        
+      @keyframes blob-1-anim {
+        0%{
+          transform:translateX(-50%) translateY(0);
+        }
+        14%{
+          transform:translateX(-50%) translateY(-8px);
+        }
+        24% {
+          transform:translateX(-50%) translateY(0);
+        }
+        100% {
+          transform:translateX(-50%) translateY(0);
+        }
+      }
+      
+      @keyframes blob-2-anim {
+        0% {
+          //transform: scale(1) translate(-50%,-150%);
+          transform: scale(1) translate(-50%,10px);
+        }
+        30% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,10px);
+        }
+        70% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,10px);
+          
+        }
+        95% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,26px);
+          
+          
+        }
+        100% {
+          //transform: scaleX(1.5) translate(-50%,140%);
+          transform: scale(1) translate(-50%,10px);
+        }
+      }
+      
+      @keyframes scrolly {
+        0% {
+          transform: translate3d(0,-150%,0) rotateX(90deg) scale(0.5) skewX(3deg);
+        }
+        30% {
+          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        70% {
+          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        95% {
+          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+        100% {
+          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+      }
+
+
+
+
+
+
 }
 
         @media only screen and (max-width:800px) {
@@ -804,6 +1167,192 @@ body {
         line-height: 1.4;
         margin-bottom: 5vw;
     }
+
+    .btn1 {
+        text-decoration: none;
+    }
+
+
+    // The Arrow
+
+.the-arrow {
+    width: $shaft-width;
+    transition: all 0.2s;
+   
+    &.-left {
+      position: absolute;
+      top: 60%;
+      left: 0;
+  
+      > .shaft {
+        width: 0;
+        background-color: $white-two;
+        
+        &:before,
+        &:after {
+          width: 0;
+          background-color: $white-two;
+        }
+  
+        &:before {
+          transform: rotate(0);
+        }
+  
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+    
+    &.-right {
+      top: 0;
+      left: .8vw;
+      
+      > .shaft {
+        width: $shaft-width;
+        transition-delay: 0.2s;
+  
+        &:before,
+        &:after { 
+          width: $arrow-head-width;
+          transition-delay: 0.3s;
+          transition: all 0.5s;
+        }
+        
+        &:before {
+          transform: rotate(40deg);
+        }
+        
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+  
+    > .shaft {
+      background-color: $white-two;
+      display: block;
+      height: $shaft-thickness;
+      position: relative;
+      transition: all 0.2s;
+      transition-delay: 0;
+      will-change: transform;
+  
+      &:before,
+      &:after {
+        background-color: $mud;
+        content: '';
+        display: block;
+        height: $arrow-head-thickness;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0;
+      }
+  
+      &:before {
+        transform-origin: top right;
+      }
+  
+      &:after {
+        transform-origin: bottom right;
+      }
+    }
+  }
+  
+  
+  
+  // Animated Arrow Button
+  
+  .animated-arrow {
+    display: inline-block;
+    font-size: .8vw;
+          font-weight: $fontBold;
+          letter-spacing: .25vw;
+          background: linear-gradient(to right, $brownish-orange-two, $army-green);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+    
+    &:hover {
+      color: $white-two;
+      text-decoration: none;
+  
+      
+      > .the-arrow.-left {
+        > .shaft {
+          width: $newshaft-width;
+          transition-delay: 0.1s;
+          background-color: $white-two;
+  
+          &:before,
+          &:after {
+            width: $arrow-head-width;
+            transition-delay: 0.1s;
+            background-color: $white-two;
+          }
+  
+          &:before {
+            transform: rotate(40deg);
+          }
+  
+          &:after {
+            transform: rotate(-40deg);
+          }
+        }
+      }
+      
+      > .main {
+        transform: translateX($shaft-width + $text-arrow-space);
+        transform: translateX($newshaft-width + $text-arrow-space);
+        
+        > .the-arrow.-right {
+          > .shaft {
+            width: 0;
+            transform: translateX(200%);
+            transition-delay: 0;
+            
+            &:before,
+            &:after {
+              width: 0;
+              transition-delay: 0;
+              transition: all 0.1s;
+            }
+  
+            &:before {
+              transform: rotate(0);
+            }
+  
+            &:after {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+    
+    > .main {
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
+      
+      // > .text {
+      //   margin: 0 $text-arrow-space 0 0;
+      //   line-height: 1;
+      // }
+      
+      > .the-arrow {
+        position: relative;
+      }
+    }
+  }
+
+
+
+    
 }
 // Welcome Section Ends
 
@@ -904,10 +1453,13 @@ body {
         color: $black;
         background-color: $white-two;
 
-
         .btn {
             display: flex;
             justify-content: center; 
+        }
+
+        .btn1 {
+            text-decoration: none;
         }
     }
 }
@@ -1016,6 +1568,10 @@ body {
                             display: flex;
                             justify-content: center; 
                         }
+
+                        .btn1 {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
@@ -1108,6 +1664,10 @@ body {
                 display: none;
                 justify-content: center;
             }
+
+            .btn1 {
+                text-decoration: none;
+            }
         }
         
         .blog-hover:hover {
@@ -1177,6 +1737,10 @@ body {
     padding: 0 0 6.41vw 0;
     display: flex;
     justify-content: center;
+
+    .btn1 {
+        text-decoration: none;
+    }
 }
 
             @media only screen and(max-width:700px) {
@@ -1302,6 +1866,10 @@ body {
                                 justify-content: center;
                                 margin-top: -3vw;
                             }
+
+                            .btn1 {
+                                text-decoration: none;
+                            }
                         }
                 
                         img {
@@ -1338,6 +1906,10 @@ body {
                     padding: 0 0 6.41vw 0;
                     display: flex;
                     justify-content: center;
+
+                    .btn1 {
+                        text-decoration: none;
+                    }
                 }
             }
 //Blog Section Ends
@@ -1385,6 +1957,7 @@ body {
         }
 
         .black-button {
+            position: relative;
             width: 12.4vw;
             height: 3.54vw;
             font-size: .8vw;
@@ -1394,6 +1967,7 @@ body {
             border: none;
             border-radius: 0.26vw;
             margin-top: -2vw;
+            transition:800ms ease all;
             
             span {
                 font-size: .8vw;
@@ -1403,6 +1977,39 @@ body {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+        }
+
+        .black-button:hover {
+            background: $white-two;
+            color: $black;
+
+            span {
+                font-size: 1vw;
+                transition:800ms ease all;
+            }
+        }
+
+        .black-button:before,.black-button:after {
+            content:'';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            width:48px;
+            background: $black;
+            transition:400ms ease all;
+        }
+
+        .black-button:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+
+        .black-button:hover:before,.black-button:hover:after{
+            width:100%;
+            transition:800ms ease all;
         }
     }
 }

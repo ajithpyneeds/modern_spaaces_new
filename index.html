@@ -28,8 +28,21 @@
     <!-- Swiperjs CDN Links -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- GSAP Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
 </head>
 <body>
+
+    <!-- <div class="brand">
+        <div class="overlay first"></div>
+        <div class="overlay second"><img src="images/logo/logo.jpg" alt=""></div>
+        <div class="overlay third"></div>
+    </div> -->
 
     <!-- Navbar Starts -->
     <div class="nav-bar">
@@ -80,7 +93,14 @@
             </div>
             <p>The fully automated futuristic homes by Modern Spaaces. Luxury 1, 2 and 3 BHK apartments in the very heart of IT corridor of the city yet nestled away in a peaceful surrounding.</p> 
             <p class="pBold">Location: Sompura Gate, Sarjapur road <br> Price: 20 Lakhs onwards</p>
-            <a href="#" class="btn1"><p>READ MORE</p></a>
+            <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
+            <a href="#" class="animated-arrow">
+                <span class="the-arrow -left"><span class="shaft"></span></span>
+                <span class="main">
+                    <span class="text btn1">READ MORE</span>
+                    <span class="the-arrow -right"><span class="shaft"></span></span>
+                </span>
+            </a>
         </div>
 
         <div class="urbanest-img">
@@ -89,9 +109,38 @@
     </div>
 
     <div class="nextPro">
-        <div class="downArrow">
+        <!-- <div class="downArrow">
             <a href=""><img src="images/downArrow.svg" alt="downArrow"></a>
-        </div>
+        </div> -->
+
+
+        <div class="ico animated">
+  
+            <div class="circle circle-top"></div>  
+            <div class="circle circle-main"></div>
+            <div class="circle circle-bottom"></div>  
+            
+            <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" >
+            <defs>
+              <clipPath id="cut-off-arrow">
+                <circle cx="306" cy="306" r="287"/>
+              </clipPath>
+              
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+             
+            </defs>
+              <path  class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                              l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                              c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                              c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"/>
+             </svg>
+          </div>
+
+
         <p>Next Soultree Project</p>
     </div>
     <!-- Urbanest Ends -->
@@ -109,8 +158,15 @@
                 <img src="images/soultreeLogo.png" alt="soultreeLogo">
             </div>
             <p>Come, discover homes for dynamic living at Soul Tree by Modern Spaaces. Premium 1, 2 and 3 BHK apartments built especially for the city dwellers among us. Wrapped in the natural surrounding & designed to aid your key life experiences, these fully automated smart homes should be your next destination.</p>
-            <p class="pBold">Location: Sompura Gate, Sarjapur road <br> Price: 20 Lakhs onwards</p>                
-            <a href="#" class="btn1"><p>READ MORE</p></a>
+            <p class="pBold">Location: Sompura Gate, Sarjapur road <br> Price: 15 Lakhs onwards</p>                
+            <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
+            <a href="#" class="animated-arrow">
+                <span class="the-arrow -left"><span class="shaft"></span></span>
+                <span class="main">
+                    <span class="text btn1">READ MORE</span>
+                    <span class="the-arrow -right"><span class="shaft"></span></span>
+                </span>
+            </a>
         </div>
     </div>
     <!-- Soultree Ends -->
@@ -118,7 +174,7 @@
     <!-- #################################################################################### -->
     <!-- Welcome Starts -->
     <div class="welcome">
-        <h1>The Future is now</h1>
+        <h1 data-lax-preset="translateY data-lax-translate-y">The Future is now</h1>
         <h2>Welcome to the new age of Smart Homes by Modern Spaaces</h2>
         <a href="#" class="btn1"><p>READ MORE</p></a>
     </div>
@@ -334,6 +390,9 @@
     <!-- Script Links -->
     <script src="static/app.js"></script>
 
+    <!-- Laxxjs Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
     <!-- Jquery For Hamburger Toggle Event -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -377,5 +436,103 @@
         })
     </script>
 
+        <!-- GSAP Landing Section Animation -->
+    <!-- <script>
+        TweenMax.from('.logo', 1, {
+        delay: 1.2,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom('.social-icons ul li', 1, {
+        delay: 1.4,
+        opacity: 0,
+        x: -20,
+        ease: Power4.easeInOut
+        }, 0.08)
+
+        TweenMax.from('.hamburger', 1, {
+        delay: 1.6,
+        opacity: 0,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-descrip h2', 1, {
+        delay: 2.8,
+        opacity: 0,
+        y: -50,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-descrip div', 1, {
+        delay: 2,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-descrip p', 1, {
+        delay: 2.8,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-descrip a', 1, {
+        delay: 3,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-img', 1, {
+        delay: 2.1,
+        width: '58.33vw',
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.urbanest-img', 1, {
+        delay: 2.1,
+        width: '0',
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.first', 1.5, {
+        delay: .2,
+        left: '-100%',
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.second', 1.5, {
+        delay: .4,
+        left: '-100%',
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.third', 1.5, {
+        delay: .6,
+        left: '-100%',
+        ease: Expo.easeInOut
+        })
+    </script> -->
+
+    <script src="js/scroll.js"></script>
+
+    <script>
+        window.onload = function() {
+            lax.setup() // init
+            
+            document.addEventListener('scroll', function(e) {
+            lax.update(window.scrollY) // update every scroll
+            }, false)
+        }
+    </script>
+
 </body>
+<!-- <script>
+    $(document).ready(function() {
+        $(this).scrollTop(0);
+    });
+</script> -->
 </html>
