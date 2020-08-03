@@ -49,11 +49,11 @@ $('.num').html(''+currentIndex+'/'+totalItems+'');
 
 
 // Hidden Button Visibility On Hovering Over Cards
-$(document).ready(function(){
-  $(".about-hover-card, .blog-hover").hover(function(){
-    $(this).css("transform", "translateY(-3.5vw)");
-    });
-});
+// $(document).ready(function(){
+//   $(".about-hover-card, .blog-hover").hover(function(){
+//     $(this).css("transform", "translateY(-3.5vw)");
+//     });
+// });
 
 
 

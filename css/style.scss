@@ -31,10 +31,13 @@ $fontThin: 300;
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     overflow-x: hidden;
 }
-
 
 .overlay {
     position: absolute;
@@ -125,6 +128,7 @@ $arrow-head-thickness: $shaft-thickness;
     left: 0;
 
     > .shaft {
+        margin-top: -1.5px;
       width: 0;
       background-color: $black;
       
@@ -224,6 +228,7 @@ $arrow-head-thickness: $shaft-thickness;
     
     > .the-arrow.-left {
       > .shaft {
+        margin-top: -1.5px;
         width: $newshaft-width;
         transition-delay: 0.1s;
         // background-color: $gray;
@@ -345,7 +350,7 @@ $arrow-head-thickness: $shaft-thickness;
 
     i:hover {
         transform: scale(1.1);
-        color: #ccc;
+        color: rgb(99, 84, 84);
     }
 }
 
@@ -571,6 +576,40 @@ $arrow-head-thickness: $shaft-thickness;
                 .open .bar.end {
                     transform: rotate(-450deg) translateX(-.8rem);
                 }
+
+
+                // .btn-background-slide::before {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     bottom: 0;
+                //     right: 0;
+                //     z-index: -1;
+                //     background-color: $white-two;
+                
+                //     transition: transform 500ms ease-in-out;
+                //     transform: scaleX(0);
+                //     transform-origin: left;
+                // }
+                
+                // .btn-background-slide:hover::before,
+                // .btn-background-slide:focus::before {
+                //     transform: scaleX(1);
+                // }
+                
+                // .btn-background-slide {
+                //     transition: color 500ms ease-in-out;
+                //     z-index: 1;
+                // }
+                
+                
+                // .btn-background-slide:hover,
+                // .btn-background-slide:focus {
+                //     color: $black;
+                // }
+
+
             }
             
             .top-nav {
@@ -1169,8 +1208,27 @@ $anim-timing: 3s;
     }
 
     .btn1 {
-        text-decoration: none;
+        display: flex;
+        border: none;
+        background: linear-gradient(to right, $brownish-orange-two, $army-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        p {
+            font-size: .8vw;
+            font-weight: $fontBold;
+            letter-spacing: .25vw;
+        }
+
+        p::after {
+            content: '\f105';
+            font-family: fontAwesome;
+            font-size: 1vw;
+            font-weight: $fontThin;
+            padding-left: .6vw;
+        }
     }
+
 
 
     // The Arrow
@@ -1348,11 +1406,7 @@ $anim-timing: 3s;
         position: relative;
       }
     }
-  }
-
-
-
-    
+  }    
 }
 // Welcome Section Ends
 
@@ -1733,14 +1787,33 @@ $anim-timing: 3s;
       }
 }
 
-  .blog>.btn {
+.blog>.btn {
     padding: 0 0 6.41vw 0;
     display: flex;
     justify-content: center;
 
     .btn1 {
-        text-decoration: none;
+        display: flex;
+        border: none;
+        background: linear-gradient(to right, $brownish-orange-two, $army-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        p {
+            font-size: .8vw;
+            font-weight: $fontBold;
+            letter-spacing: .25vw;
+        }
+
+        p::after {
+            content: '\f105';
+            font-family: fontAwesome;
+            font-size: 1vw;
+            font-weight: $fontThin;
+            padding-left: .6vw;
+        }
     }
+
 }
 
             @media only screen and(max-width:700px) {
@@ -1956,61 +2029,135 @@ $anim-timing: 3s;
             margin-bottom: 3.57vw;
         }
 
-        .black-button {
-            position: relative;
+
+
+
+
+        .btnB {
             width: 12.4vw;
             height: 3.54vw;
+            padding-left: .8vw;
             font-size: .8vw;
             letter-spacing: 2px;
             font-weight: $fontBold;
             background-color: $black;
-            border: none;
+            color: $white-two;
             border-radius: 0.26vw;
             margin-top: -2vw;
-            transition:800ms ease all;
-            
-            span {
-                font-size: .8vw;
-                letter-spacing: 4px;
-                line-height: 1;
-                background: linear-gradient(to right, $brownish-orange-two, $army-green);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
+            border: none;
+            position: relative;
 
-        .black-button:hover {
-            background: $white-two;
-            color: $black;
+            // span {
+            //     background: linear-gradient(to right, $brownish-orange-two, $army-green);
+            //     -webkit-background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            // }
 
-            span {
+            span:after {
+                color: $black;
+                content: '\f105';
+                font-family: fontAwesome;
                 font-size: 1vw;
-                transition:800ms ease all;
+                font-weight: $fontThin;
+                padding-left: .6vw;
             }
         }
+  
 
-        .black-button:before,.black-button:after {
-            content:'';
+        .btnB.btn-background-slide::before {
+            content: '';
             position: absolute;
             top: 0;
+            left: 0;
+            bottom: 0;
             right: 0;
-            height: 2px;
-            width:48px;
-            background: $black;
-            transition:400ms ease all;
-        }
+            z-index: -1;
+            background-color: $white-two;
+          
+            transition: transform 500ms ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+          }
+          
+          .btnB.btn-background-slide:hover::before,
+          .btnB.btn-background-slide:focus::before {
+            transform: scaleX(1);
+          }
+          
+          .btnB.btn-background-slide {
+            transition: color 500ms ease-in-out;
+            z-index: 1;
+          }
+          
+          
+          .btnB.btn-background-slide:hover,
+          .btnB.btn-background-slide:focus {
+            color: $black;
 
-        .black-button:after{
-            right:inherit;
-            top:inherit;
-            left:0;
-            bottom:0;
-        }
+                span:after {
+                    content: '\f105';
+                    font-family: fontAwesome;
+                    font-size: 1vw;
+                    font-weight: $fontThin;
+                    padding-left: .6vw;
+                }
+          }
 
-        .black-button:hover:before,.black-button:hover:after{
-            width:100%;
-            transition:800ms ease all;
-        }
+        // .black-button {
+        //     position: relative;
+        //     width: 12.4vw;
+        //     height: 3.54vw;
+        //     font-size: .8vw;
+        //     letter-spacing: 2px;
+        //     font-weight: $fontBold;
+        //     background-color: $black;
+        //     border: none;
+        //     border-radius: 0.26vw;
+        //     margin-top: -2vw;
+        //     transition:800ms ease all;
+            
+        //     span {
+        //         font-size: .8vw;
+        //         letter-spacing: 4px;
+        //         line-height: 1;
+        //         background: linear-gradient(to right, $brownish-orange-two, $army-green);
+        //         -webkit-background-clip: text;
+        //         -webkit-text-fill-color: transparent;
+        //     }
+        // }
+
+        // .black-button:hover {
+        //     background: $white-two;
+        //     color: $black;
+
+        //     span {
+        //         font-size: 1vw;
+        //         transition:800ms ease all;
+        //     }
+        // }
+
+        // .black-button:before,.black-button:after {
+        //     content:'';
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     height: 2px;
+        //     width:48px;
+        //     background: $black;
+        //     transition:400ms ease all;
+        // }
+
+        // .black-button:after{
+        //     right:inherit;
+        //     top:inherit;
+        //     left:0;
+        //     bottom:0;
+        // }
+
+        // .black-button:hover:before,.black-button:hover:after{
+        //     width:100%;
+        //     transition:800ms ease all;
+        // }
     }
 }
 

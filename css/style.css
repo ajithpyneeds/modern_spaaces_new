@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -84,6 +88,7 @@ body {
 }
 
 .the-arrow.-left > .shaft {
+  margin-top: -1.5px;
   width: 0;
   background-color: #000000;
 }
@@ -189,6 +194,7 @@ body {
 }
 
 .animated-arrow:hover > .the-arrow.-left > .shaft {
+  margin-top: -1.5px;
   width: 64px;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -314,7 +320,7 @@ body {
 .social-icons i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #ccc;
+  color: #635454;
 }
 
 .hamburger {
@@ -1274,7 +1280,28 @@ body {
 }
 
 .welcome .btn1 {
-  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome .btn1 p {
+  font-size: .8vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
+}
+
+.welcome .btn1 p::after {
+  content: '\f105';
+  font-family: fontAwesome;
+  font-size: 1vw;
+  font-weight: 300;
+  padding-left: .6vw;
 }
 
 .welcome .the-arrow {
@@ -1896,7 +1923,28 @@ body {
 }
 
 .blog > .btn .btn1 {
-  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog > .btn .btn1 p {
+  font-size: .8vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
+}
+
+.blog > .btn .btn1 p::after {
+  content: '\f105';
+  font-family: fontAwesome;
+  font-size: 1vw;
+  font-weight: 300;
+  padding-left: .6vw;
 }
 
 @media only screen and (max-width: 700px) {
@@ -2116,65 +2164,73 @@ body {
   margin-bottom: 3.57vw;
 }
 
-.contact .inputs .black-button {
-  position: relative;
+.contact .inputs .btnB {
   width: 12.4vw;
   height: 3.54vw;
+  padding-left: .8vw;
   font-size: .8vw;
   letter-spacing: 2px;
   font-weight: 600;
   background-color: #000000;
-  border: none;
+  color: #ffffff;
   border-radius: 0.26vw;
   margin-top: -2vw;
-  -webkit-transition: 800ms ease all;
-  transition: 800ms ease all;
+  border: none;
+  position: relative;
 }
 
-.contact .inputs .black-button span {
-  font-size: .8vw;
-  letter-spacing: 4px;
-  line-height: 1;
-  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-  background: linear-gradient(to right, #d49e1f, #534215);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contact .inputs .black-button:hover {
-  background: #ffffff;
+.contact .inputs .btnB span:after {
   color: #000000;
-}
-
-.contact .inputs .black-button:hover span {
+  content: '\f105';
+  font-family: fontAwesome;
   font-size: 1vw;
-  -webkit-transition: 800ms ease all;
-  transition: 800ms ease all;
+  font-weight: 300;
+  padding-left: .6vw;
 }
 
-.contact .inputs .black-button:before, .contact .inputs .black-button:after {
+.contact .inputs .btnB.btn-background-slide::before {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
-  height: 2px;
-  width: 48px;
-  background: #000000;
-  -webkit-transition: 400ms ease all;
-  transition: 400ms ease all;
-}
-
-.contact .inputs .black-button:after {
-  right: inherit;
-  top: inherit;
   left: 0;
   bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffffff;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
-.contact .inputs .black-button:hover:before, .contact .inputs .black-button:hover:after {
-  width: 100%;
-  -webkit-transition: 800ms ease all;
-  transition: 800ms ease all;
+.contact .inputs .btnB.btn-background-slide:hover::before,
+.contact .inputs .btnB.btn-background-slide:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.contact .inputs .btnB.btn-background-slide {
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+  z-index: 1;
+}
+
+.contact .inputs .btnB.btn-background-slide:hover,
+.contact .inputs .btnB.btn-background-slide:focus {
+  color: #000000;
+}
+
+.contact .inputs .btnB.btn-background-slide:hover span:after,
+.contact .inputs .btnB.btn-background-slide:focus span:after {
+  content: '\f105';
+  font-family: fontAwesome;
+  font-size: 1vw;
+  font-weight: 300;
+  padding-left: .6vw;
 }
 
 @media only screen and (max-width: 800px) {

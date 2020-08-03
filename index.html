@@ -38,11 +38,11 @@
 </head>
 <body>
 
-    <div class="brand">
+    <!-- <div class="brand">
         <div class="overlay first"></div>
         <div class="overlay second"><img src="images/logo/logo.jpg" alt=""></div>
         <div class="overlay third"></div>
-    </div>
+    </div> -->
 
     <!-- Navbar Starts -->
     <div class="nav-bar">
@@ -61,7 +61,7 @@
         </div>
 
         <div class="hamburger">
-            <div class="bg-hamburger">
+            <div class="bg-hamburger btnB btn-background-slide">
                 <div class="menu-toggler">
                     <div class="bar half start"></div>
                     <div class="bar"></div>
@@ -87,12 +87,12 @@
     <!-- Urbanest Starts -->
     <div class="urbanest">
         <div class="urbanest-descrip">
-            <h2>Every home has a unique story!</h2>
-            <div class="urbanestLogo">
+            <h2 class="rellax" data-rellax-speed="6">Every home has a unique story!</h2>
+            <div class="urbanestLogo rellax" data-rellax-speed="5">
                 <img src="images/urbanestLogo.png" alt="urbanestLogo">
             </div>
-            <p>The fully automated futuristic homes by Modern Spaaces. Luxury 1, 2 and 3 BHK apartments in the very heart of IT corridor of the city yet nestled away in a peaceful surrounding.</p> 
-            <p class="pBold">Location: Sompura Gate, Sarjapur road <br> Price: 20 Lakhs onwards</p>
+            <p class="rellax" data-rellax-speed="4">The fully automated futuristic homes by Modern Spaaces. Luxury 1, 2 and 3 BHK apartments in the very heart of IT corridor of the city yet nestled away in a peaceful surrounding.</p> 
+            <p class="pBold rellax" data-rellax-speed="3">Location: Sompura Gate, Sarjapur road <br> Price: 20 Lakhs onwards</p>
             <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
             <a href="#" class="animated-arrow">
                 <span class="the-arrow -left"><span class="shaft"></span></span>
@@ -114,8 +114,8 @@
         </div> -->
 
 
-        <div class="ico animated">
-  
+        <div class="ico animated" style="cursor: pointer;">
+            <a href="#soultree">
             <div class="circle circle-top"></div>  
             <div class="circle circle-main"></div>
             <div class="circle circle-bottom"></div>  
@@ -138,6 +138,7 @@
                               c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
                               c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"/>
              </svg>
+            </a>
           </div>
 
 
@@ -147,12 +148,12 @@
 
     <!-- #################################################################################### -->
     <!-- Soultree Starts -->
-    <div class="soultree">
-        <div class="soultree-img">
+    <div class="soultree" id="soultree">
+        <div class="soultree-img" data-aos="fade-right" data-aos-delay="200">
             <img src="images/soultree/soultree.jpg" srcset="images/soultree/soultree@2x.jpg 2x, images/soultree/soultree@3x.jpg 3x">
         </div>
 
-        <div class="soultree-descrip">
+        <div class="soultree-descrip" data-aos="fade-left" data-aos-delay="200">
             <h2>Breathe a new sense of living!</h2>
             <div class="soultreeLogo">
                 <img src="images/soultreeLogo.png" alt="soultreeLogo">
@@ -174,9 +175,16 @@
     <!-- #################################################################################### -->
     <!-- Welcome Starts -->
     <div class="welcome">
-        <h1 data-lax-preset="translateY data-lax-translate-y">The Future is now</h1>
-        <h2>Welcome to the new age of Smart Homes by Modern Spaaces</h2>
-        <a href="#" class="btn1"><p>READ MORE</p></a>
+        <h1 data-lax-preset="translateY data-lax-translate-y" data-aos="fade-left" data-aos-delay="160">The Future is now</h1>
+        <h2 data-aos="fade-right" data-aos-delay="160">Welcome to the new age of Smart Homes by Modern Spaaces</h2>
+        <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
+        <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="200">
+            <span class="the-arrow -left"><span class="shaft"></span></span>
+            <span class="main">
+                <span class="text btn1">READ MORE</span>
+                <span class="the-arrow -right"><span class="shaft"></span></span>
+            </span>
+        </a>
     </div>
     <!-- Welcome Ends -->
 
@@ -184,8 +192,8 @@
     <!-- About Section Starts -->
     <section class="about" id="about">
         <div class="about-descrip">
-            <h1>What we do</h1>
-            <p>
+            <h1 data-aos="fade-up" data-aos-delay="180">What we do</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
                 We at Modern Spaaces believe in taking an ingenious & meaningful approach to design sustainable
                 & intelligent spaces for all your desires & aspirations, be it home or your private space.
             </p>
@@ -209,7 +217,7 @@
 
         <div class="about-cards">
             <div class="about-card-div" id="residential"> 
-                <div class="about-hover-card">
+                <div class="about-hover-card" data-aos="fade-up" data-aos-delay="230">
                     <div class="about-img">
                         <img src="images/residential/residential.jpg" srcset="images/residential/residential@2x.jpg 2x, images/residential/residential@3x.jpg 3x">
                     </div>
@@ -221,7 +229,7 @@
                 </div>    
             </div>
 
-            <div class="about-card-div" id="decor">
+            <div class="about-card-div" id="decor" data-aos="fade-up" data-aos-delay="350">
                 <div class="about-hover-card">
                     <div class="about-img">
                         <img src="images/decor/decor.jpg" srcset="images/decor/decor@2x.jpg 2x, images/decor/decor@3x.jpg 3x">
@@ -234,7 +242,7 @@
                 </div>
             </div>
 
-            <div class="about-card-div" id="construction">
+            <div class="about-card-div" id="construction" data-aos="fade-up" data-aos-delay="230">
                 <div class="about-hover-card">
                     <div class="about-img">
                         <img src="images/construction/construction.jpg" srcset="images/construction/construction@2x.jpg 2x, images/construction/construction@3x.jpg 3x">
@@ -254,10 +262,10 @@
     <!-- Blog Section Starts -->
     <section class="blog" id="projects">
         <div class="blog-title">
-            <h1>Popular Blogs</h1>
+            <h1 data-aos="fade-up" data-aos-delay="180">Popular Blogs</h1>
         </div>
 
-        <div class="arrows">
+        <div class="arrows" data-aos="fade-up" data-aos-delay="200">
             <a class="left2">
                 <span><i class="fa fa-angle-left"></i></span>
               </a>
@@ -266,7 +274,7 @@
             </a>
         </div>
 
-        <div class="main-swiper">
+        <div class="main-swiper" data-aos="fade-up" data-aos-delay="250">
             <div class="blank">
 
             </div>
@@ -335,8 +343,15 @@
             </div>
         </div>
 
-        <div class="btn">
-            <a href="#" class="btn1"><p>VIEW ALL</p></a>
+        <div class="btn" data-aos="fade-up" data-aos-delay="300">
+            <!-- <a href="#" class="btn1"><p>VIEW ALL</p></a> -->
+            <a href="#" class="animated-arrow">
+                <span class="the-arrow -left"><span class="shaft"></span></span>
+                <span class="main">
+                    <span class="text btn1">VIEW ALL</span>
+                    <span class="the-arrow -right"><span class="shaft"></span></span>
+                </span>
+            </a>
         </div>
     </section>        
     <!-- Blog Section Ends -->
@@ -344,17 +359,18 @@
     <!-- #################################################################################### -->
     <!-- Contact Section Starts -->
     <section class="contact" id="contactUs">
-        <h1>Get in touch</h1>
+        <h1 data-aos="fade-up" data-aos-delay="180">Get in touch</h1>
         <div class="inputs">
             <div class="inputA">
-                <input type="text" placeholder="Name" maxlength="20">
-                <input type="email" name="email" placeholder="Email ID">
-                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                <input type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="200">
+                <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="250">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="300">
             </div>
             <div class="inputB">
-                <input type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
-                <input type="text" placeholder="Select Property*" maxlength="20">
-                <button class="black-button" type="submit"><span>SEND</span></button>
+                <input type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="200">
+                <input type="text" placeholder="Select Property*" maxlength="20" data-aos="fade-up" data-aos-delay="250">
+                <!-- <button class="black-button" type="submit"><span>SEND</span></button> -->
+                <button class="btnB btn-background-slide" type="submit"><span data-aos="fade-up" data-aos-delay="200">SEND</span></button>
             </div>
         </div>
     </section>
@@ -364,17 +380,17 @@
     <!-- Footer Starts -->
     <footer class="footer">
         <div class="footer-main">
-            <h1 class="footer-title">New Age<br>
+            <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
                 of Smart Homes
             </h1>
             <ul class="footer-nav-items">
-                <li><a href="#about">About us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#residential">Residential</a></li>
-                <li><a href="#decor">Decor</a></li>
-                <li><a href="#construction">Construction</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
-                <li class="vertical-line"></li>
+                <li data-aos="fade-up" data-aos-delay="200">About us</li>
+                <li data-aos="fade-up" data-aos-delay="250">Projects</li>
+                <li data-aos="fade-up" data-aos-delay="300">Residential</li>
+                <li data-aos="fade-up" data-aos-delay="350">Decor</li>
+                <li data-aos="fade-up" data-aos-delay="400">Construction</li>
+                <li data-aos="fade-up" data-aos-delay="450">Contact Us</li>
+                <li data-aos="fade-up" data-aos-delay="500" class="vertical-line"></li>
             </ul>
         </div>
 
@@ -388,7 +404,7 @@
 
     <!-- #################################################################################### -->
     <!-- Script Links -->
-    <script src="static/app.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Laxxjs Animation -->
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
@@ -439,82 +455,92 @@
         <!-- GSAP Landing Section Animation -->
     <script>
         TweenMax.from('.logo', 1, {
-        delay: 1.2,
+        delay: 0.1,
         opacity: 0,
         x: -20,
         ease: Expo.easeInOut
         })
 
         TweenMax.staggerFrom('.social-icons ul li', 1, {
-        delay: 1.4,
+        delay: 0.2,
         opacity: 0,
-        x: -20,
+        x: -10,
         ease: Power4.easeInOut
         }, 0.08)
 
         TweenMax.from('.hamburger', 1, {
-        delay: 1.6,
+        delay: 0.3,
         opacity: 0,
         ease: Expo.easeInOut
-        })
+        });
 
-        TweenMax.from('.urbanest-descrip h2', 1, {
-        delay: 2.8,
+        // TweenMax.from('.urbanest-descrip h2', 2, {
+        // delay: 0.5,
+        // opacity: 0,
+        // rotation: 90,
+        // x: -20,
+        // ease: Expo.easeInOut
+        // });
+
+        // TweenMax.from('.urbanest-descrip div', 2, {
+        // delay: 0.5,
+        // opacity: 0,
+        // rotation: 90,
+        // x: -20,
+        // ease: Expo.easeInOut
+        // });
+
+        // TweenMax.from('.urbanest-descrip p', 2, {
+        // delay: 0.5,
+        // opacity: 0,
+        // rotation: 90,
+        // x: -20,
+        // ease: Expo.easeInOut
+        // });
+
+        // TweenMax.from('.urbanest-descrip a', 2, {
+        // delay: 0.5,
+        // opacity: 0,
+        // ease: Expo.easeInOut
+        // });
+
+        TweenMax.from('.urbanest-img', 2, {
+        delay: .5,
+        x: 50,
         opacity: 0,
-        y: -50,
         ease: Expo.easeInOut
-        })
+        });
 
-        TweenMax.from('.urbanest-descrip div', 1, {
-        delay: 2,
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-        })
+        // TweenMax.from('.nextPro', 2, {
+        // delay: .5,
+        // x: -50,
+        // opacity: 0,
+        // ease: Expo.easeInOut
+        // });
 
-        TweenMax.from('.urbanest-descrip p', 1, {
-        delay: 2.8,
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-        })
+        // TweenMax.to('.urbanest-img', 1, {
+        // delay: 0.6,
+        // opacity: 1,
+        // ease: Expo.easeInOut
+        // })
 
-        TweenMax.from('.urbanest-descrip a', 1, {
-        delay: 3,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-        })
+        // TweenMax.to('.first', 1.5, {
+        // delay: .2,
+        // left: '-100%',
+        // ease: Expo.easeInOut
+        // })
 
-        TweenMax.from('.urbanest-img', 1, {
-        delay: 2.1,
-        width: '58.33vw',
-        ease: Expo.easeInOut
-        })
+        // TweenMax.to('.second', 1.5, {
+        // delay: .4,
+        // left: '-100%',
+        // ease: Expo.easeInOut
+        // })
 
-        TweenMax.from('.urbanest-img', 1, {
-        delay: 2.1,
-        width: '0',
-        ease: Expo.easeInOut
-        })
-
-        TweenMax.to('.first', 1.5, {
-        delay: .2,
-        left: '-100%',
-        ease: Expo.easeInOut
-        })
-
-        TweenMax.to('.second', 1.5, {
-        delay: .4,
-        left: '-100%',
-        ease: Expo.easeInOut
-        })
-
-        TweenMax.to('.third', 1.5, {
-        delay: .6,
-        left: '-100%',
-        ease: Expo.easeInOut
-        })
+        // TweenMax.to('.third', 1.5, {
+        // delay: .6,
+        // left: '-100%',
+        // ease: Expo.easeInOut
+        // })
     </script>
 
     <script src="js/scroll.js"></script>
@@ -529,10 +555,81 @@
         }
     </script>
 
+    <script>
+        AOS.init({
+        easing: 'ease',
+        duration: 800,
+        once: false
+    })
+    </script>
+
+    <!-- GSAP CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+
+    <!-- <script type="text/javascript">
+        gsap.from(this.urbanest-img.nativeElement.)
+    </script> -->
+
+    <!-- <script>
+        gsap.fromTo(".urbanest-img", {
+            x:0,
+            y:0,
+            opacity:0,
+            duration: 1
+        },
+          {  x:0,
+            y:0,
+            opacity:1,
+            duration: 1
+        });
+    </script> -->
+
+
+    <!-- Rellax js for parallax effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+    <script>
+
+        var rellax = new Rellax('.rellax');
+
+    </script>
+
+
+
+    <!-- Smooth Scroll Cross Browser Suppoort -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script> 
+
 </body>
-<script>
+<!-- <script>
     $(document).ready(function() {
         $(this).scrollTop(0);
     });
-</script>
+</script> -->
 </html>
