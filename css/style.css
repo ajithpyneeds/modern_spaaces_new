@@ -9,6 +9,12 @@
 
 html {
   scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 body {
@@ -651,7 +657,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 11.93vw;
+  margin-top: 7.6vw;
 }
 
 .urbanest .urbanest-descrip {
@@ -731,7 +737,7 @@ body {
 }
 
 .nextPro {
-  margin-top: 4.53vw;
+  margin-top: 1.6vw;
   margin-right: 3.02vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,6 +749,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
+  margin-bottom: 2vw;
 }
 
 .nextPro .downArrow {
@@ -1054,7 +1061,7 @@ body {
 }
 
 .soultree {
-  height: auto;
+  height: 100vh;
   background-color: #ffffff;
   color: #000000;
   font-family: Titillium Web, sans-serif;

@@ -33,7 +33,10 @@ $fontThin: 300;
 
 html {
     scroll-behavior: smooth;
-  }
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
 
 body {
     overflow-x: hidden;
@@ -632,7 +635,8 @@ $arrow-head-thickness: $shaft-thickness;
     color: $black;
     font-family: Titillium Web, sans-serif;
     display: flex;
-    margin-top: 11.93vw;
+    margin-top: 7.6vw;
+    // margin-top: 11.93vw;
     // overflow: hidden;
 
     .urbanest-descrip {
@@ -717,12 +721,14 @@ $bezier-bounce: cubic-bezier(.87,-.41,.19,1.44);
 $anim-timing: 3s;
 
 .nextPro {
-    margin-top: 4.53vw ;
+    margin-top: 1.6vw ;
+    // margin-top: 4.53vw ;
     margin-right: 3.02vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: $white-two;
+    margin-bottom: 2vw;
 
     .downArrow {
         width: 2vw;
@@ -982,7 +988,7 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    height: auto;
+    height: 100vh;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;

@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="nextPro">
+    <div class="nextPro">
         <!-- <div class="downArrow">
             <a href=""><img src="images/downArrow.svg" alt="downArrow"></a>
         </div> -->
@@ -145,7 +145,7 @@
 
 
         <p>Next Soultree Project</p>
-    </section>
+    </div>
     <!-- Urbanest Ends -->
 
     <!-- #################################################################################### -->
@@ -360,7 +360,7 @@
 
     <!-- #################################################################################### -->
     <!-- Contact Section Starts -->
-    <section class="contact" id="contactUs">
+    <div class="contact" id="contactUs">
         <h1 data-aos="fade-up" data-aos-delay="180">Get in touch</h1>
         <div class="inputs">
             <div class="inputA">
@@ -375,12 +375,12 @@
                 <button class="btnB btn-background-slide" type="submit"><span data-aos="fade-up" data-aos-delay="200">SEND</span></button>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Contact Section Ends -->
 
     <!-- #################################################################################### -->
     <!-- Footer Starts -->
-    <footer class="footer">
+    <section class="footer height-100" data-snap-point>
         <div class="footer-main">
             <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
                 of Smart Homes
@@ -401,7 +401,7 @@
             <p class="policy">Privacy Policy</p>
             <p class="disclaimer">Disclaimer</p>
         </div>
-    </footer>
+    </section>
     <!-- Footer Ends -->
 
     <!-- #################################################################################### -->
@@ -453,6 +453,23 @@
             },
         })
     </script>
+
+
+    <!-- snap scroll -->
+    <script>
+        const gra = function(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        const init = function(){
+            let items = document.querySelectorAll('section');
+            for (let i = 0; i < items.length; i++){
+                items[i].style.background = randomColor({luminosity: 'light'});
+            }
+            cssScrollSnapPolyfill()
+        }
+        init();
+    </script>
+
 
         <!-- GSAP Landing Section Animation -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
