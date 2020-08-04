@@ -633,7 +633,7 @@ $arrow-head-thickness: $shaft-thickness;
     font-family: Titillium Web, sans-serif;
     display: flex;
     margin-top: 11.93vw;
-    overflow: hidden;
+    // overflow: hidden;
 
     .urbanest-descrip {
         margin-top: 6vw;
@@ -697,13 +697,14 @@ $arrow-head-thickness: $shaft-thickness;
 
     .urbanest-img {
         width: 58.33vw;
-        padding-right: 3.02vw;        
+        margin-right: 3.02vw; 
+        border-radius: 1.56vw;
+        overflow: hidden;
 
         img {
             width: 100%;
             height: auto;
             border-radius: 1.56vw;
-            background-attachment: fixed;
         }
     }
 }
@@ -988,14 +989,15 @@ $anim-timing: 3s;
     display: flex;
     margin-top: 8vw;
     margin-bottom: 11.56vw;
-    overflow: hidden;
+    // overflow: hidden;
 
     .soultree-img {
         margin-top: -4vw;  // parallax
         width: 58.33vw;
         height: 46vw;      // parallax
-        padding-left: 3.02vw;
-        background-color: $white-two;
+        margin-left: 3.02vw;
+        border-radius: 1.56vw;
+        overflow: hidden;
 
 
         img {

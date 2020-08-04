@@ -652,7 +652,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 11.93vw;
-  overflow: hidden;
 }
 
 .urbanest .urbanest-descrip {
@@ -720,14 +719,15 @@ body {
 
 .urbanest .urbanest-img {
   width: 58.33vw;
-  padding-right: 3.02vw;
+  margin-right: 3.02vw;
+  border-radius: 1.56vw;
+  overflow: hidden;
 }
 
 .urbanest .urbanest-img img {
   width: 100%;
   height: auto;
   border-radius: 1.56vw;
-  background-attachment: fixed;
 }
 
 .nextPro {
@@ -1063,15 +1063,15 @@ body {
   display: flex;
   margin-top: 8vw;
   margin-bottom: 11.56vw;
-  overflow: hidden;
 }
 
 .soultree .soultree-img {
   margin-top: -4vw;
   width: 58.33vw;
   height: 46vw;
-  padding-left: 3.02vw;
-  background-color: #ffffff;
+  margin-left: 3.02vw;
+  border-radius: 1.56vw;
+  overflow: hidden;
 }
 
 .soultree .soultree-img img {
