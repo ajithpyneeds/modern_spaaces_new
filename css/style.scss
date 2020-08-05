@@ -489,7 +489,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .bar {
-    background-color: $brownish-orange;
+    background-color: $brownish-orange-two;
     width: 100%;
     height: 1px;
     border-radius: 5px;
@@ -685,7 +685,7 @@ $arrow-head-thickness: $shaft-thickness;
 // ###################################################################
 // Urbanest Starts
 .urbanest {
-    height: 72vh;
+    height: 35vw;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
@@ -1044,7 +1044,7 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    height: auto;
+    height: 42vw;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
@@ -1226,7 +1226,7 @@ $anim-timing: 3s;
 // Welcome Section Starts
 .welcome {
     // height: 40.16vw;
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     font-family: Titillium Web, sans-serif;
     color: $white-two;
