@@ -9,16 +9,11 @@
 
 html {
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
-  -ms-scroll-snap-points-y: repeat(100vh);
-      scroll-snap-points-y: repeat(100vh);
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .overlay {
@@ -292,6 +287,7 @@ body {
 
 .logo-container {
   width: 70%;
+  z-index: 5;
 }
 
 .logo-container .logo {
@@ -307,6 +303,7 @@ body {
 
 .social-icons {
   width: 17%;
+  z-index: 5;
 }
 
 .social-icons ul {
@@ -334,12 +331,37 @@ body {
 }
 
 .bg-hamburger {
+  border: none;
+  font-size: 0;
   background-color: #000000;
   height: 3.54vw;
   width: 3.54vw;
   border-radius: 0.26vw;
   float: right;
   margin-right: 3.02vw;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.bg-hamburger:before {
+  content: "";
+  margin-left: 92.5vw;
+  width: 4vw;
+  height: 5vw;
+  background-color: #ffffff;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+}
+
+.btn-1:before {
+  top: 0px;
+  left: -4vw;
+}
+
+.btn-1:hover:before {
+  left: 0;
 }
 
 .top-nav {
@@ -348,7 +370,7 @@ body {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background: #bebebe;
+  background: #000000;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -379,9 +401,11 @@ body {
 }
 
 .nav-link {
+  font-family: Titillium Web, sans-serif;
+  font-size: 2.95vw;
   font-size: 1.5vw;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-link:hover,
@@ -414,7 +438,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  z-index: 1500;
+  z-index: 2000;
   -webkit-transition: -webkit-transform 500ms ease-out;
   transition: -webkit-transform 500ms ease-out;
   transition: transform 500ms ease-out;
@@ -428,7 +452,8 @@ body {
 }
 
 .bar {
-  background: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
   width: 100%;
   height: 1px;
   border-radius: 5px;
@@ -439,8 +464,8 @@ body {
 }
 
 .bar.start {
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: -webkit-transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -448,15 +473,15 @@ body {
 }
 
 .open .bar.start {
-  -webkit-transform: rotate(-450deg) translateX(0.8rem);
-          transform: rotate(-450deg) translateX(0.8rem);
+  -webkit-transform: rotate(-450deg) translateX(-0.4rem);
+          transform: rotate(-450deg) translateX(-0.4rem);
 }
 
 .bar.end {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: -webkit-transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -464,8 +489,8 @@ body {
 }
 
 .open .bar.end {
-  -webkit-transform: rotate(-450deg) translateX(-0.8rem);
-          transform: rotate(-450deg) translateX(-0.8rem);
+  -webkit-transform: rotate(-450deg) translateX(0.4rem);
+          transform: rotate(-450deg) translateX(0.4rem);
 }
 
 @media only screen and (max-width: 800px) {
@@ -650,7 +675,7 @@ body {
 }
 
 .urbanest {
-  height: auto;
+  height: 72vh;
   background-color: #ffffff;
   color: #000000;
   font-family: Titillium Web, sans-serif;
@@ -1061,7 +1086,7 @@ body {
 }
 
 .soultree {
-  height: 100vh;
+  height: 90vh;
   background-color: #ffffff;
   color: #000000;
   font-family: Titillium Web, sans-serif;
@@ -1242,7 +1267,7 @@ body {
 }
 
 .welcome {
-  height: 40.16vw;
+  height: 80vh;
   width: 100%;
   font-family: Titillium Web, sans-serif;
   color: #ffffff;
@@ -1490,7 +1515,7 @@ body {
 }
 
 .about {
-  height: auto;
+  height: 115vh;
   font-family: Titillium Web, sans-serif;
   color: #000000;
   background-color: #ffffff;
@@ -1725,7 +1750,7 @@ body {
 }
 
 .blog {
-  height: auto;
+  height: 120vh;
   background-color: #fafafa;
   font-family: Titillium Web, sans-serif;
   color: #000000;
@@ -2117,7 +2142,7 @@ body {
 }
 
 .contact {
-  height: auto;
+  height: 90vh;
   background-color: #ffffff;
   color: #000000;
   font-family: Titillium Web, sans-serif;
@@ -2229,6 +2254,116 @@ body {
   padding-left: .6vw;
 }
 
+.contact .ico {
+  margin: -30% 0 0 50%;
+  text-align: center;
+  width: 2vw;
+  height: 2vw;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+}
+
+.contact .ico .circle {
+  background: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 3vw;
+  width: 3vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+}
+
+.contact .ico .st-arrow {
+  fill: #ffffff;
+  -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+          animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  -webkit-perspective: 9000px;
+          perspective: 9000px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.contact .svg {
+  z-index: 9;
+  position: relative;
+}
+
+@keyframes blob-1-anim {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+  }
+  14% {
+    -webkit-transform: translateX(-50%) translateY(-8px);
+            transform: translateX(-50%) translateY(-8px);
+  }
+  24% {
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes blob-2-anim {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, 10px);
+            transform: scale(1) translate(-50%, 10px);
+  }
+  30% {
+    -webkit-transform: scale(1) translate(-50%, 10px);
+            transform: scale(1) translate(-50%, 10px);
+  }
+  70% {
+    -webkit-transform: scale(1) translate(-50%, 10px);
+            transform: scale(1) translate(-50%, 10px);
+  }
+  95% {
+    -webkit-transform: scale(1) translate(-50%, 26px);
+            transform: scale(1) translate(-50%, 26px);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, 10px);
+            transform: scale(1) translate(-50%, 10px);
+  }
+}
+
+@keyframes scrolly {
+  0% {
+    -webkit-transform: translate3d(0, -150%, 0) rotateX(90deg) scale(0.5) skewX(3deg);
+            transform: translate3d(0, -150%, 0) rotateX(90deg) scale(0.5) skewX(3deg);
+  }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+            transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+            transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  95% {
+    -webkit-transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+            transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+            transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .contact {
     height: auto;
@@ -2303,6 +2438,7 @@ body {
   height: 100vh;
   background-color: #000000;
   font-family: Titillium Web, sans-serif;
+  scroll-snap-align: center;
 }
 
 .footer-main {

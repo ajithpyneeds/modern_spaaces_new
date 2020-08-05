@@ -33,14 +33,18 @@ $fontThin: 300;
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
 }
 
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+// .main-container {
+//     height: 100vh;
+//     overflow-y: scroll;
+//     scroll-snap-type: y mandatory;
+// }
 
 .overlay {
     position: absolute;
@@ -323,6 +327,7 @@ $arrow-head-thickness: $shaft-thickness;
 
 .logo-container {
     width: 70%;
+    z-index: 5;
 
     .logo {
         width: 15vw;
@@ -338,6 +343,7 @@ $arrow-head-thickness: $shaft-thickness;
 
 .social-icons {
     width: 17%;
+    z-index: 5;
 
     ul {
         display: flex;
@@ -361,13 +367,52 @@ $arrow-head-thickness: $shaft-thickness;
     width: 13%;
 }
 
+// .hamburger:hover {
+//     .bg-hamburger {
+//         width: 3.54vw;
+//         background-color: $white-two;
+//         transition: background-color width 800;
+
+//         .menu-toggler {
+//             .bar {
+//                 background-color: $black;
+//                 transition: background-color 500;
+//             }
+//         }
+//     }
+// }
+
 .bg-hamburger {
+    border: none;
+    font-size: 0;
     background-color: $black;
     height: 3.54vw;
     width: 3.54vw;
     border-radius: 0.26vw;
     float: right;
     margin-right: 3.02vw;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.bg-hamburger:before{
+    content: "";
+    margin-left: 92.5vw;
+    width: 4vw;
+    height: 5vw;
+    background-color: $white-two;
+    transition: all 1s ease;
+    position: absolute;
+}
+
+.btn-1:before{
+    top: 0px;
+    left: -4vw;
+}
+
+.btn-1:hover:before {
+    left: 0;
+    
 }
 
 .top-nav {
@@ -376,7 +421,7 @@ $arrow-head-thickness: $shaft-thickness;
     position: fixed;
     top: -100vh;
     z-index: 50;
-    background: $pinkish-grey;
+    background: $black;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
@@ -397,9 +442,11 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .nav-link {
+    font-family: Titillium Web, sans-serif;
+    font-size: $h1;
     font-size: 1.5vw;
     font-weight: 600;
-    color: $black;
+    color: $white-two;
 }
 
 .nav-link:hover,
@@ -424,7 +471,7 @@ $arrow-head-thickness: $shaft-thickness;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1500;
+    z-index: 2000;
     transition: transform 500ms ease-out;
     overflow: visible;
 }
@@ -434,7 +481,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .bar {
-    background: $white-two;
+    background: linear-gradient(to right, $brownish-orange-two, $army-green);   
     width: 100%;
     height: 1px;
     border-radius: 5px;
@@ -445,22 +492,22 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .bar.start {
-    transform-origin: right;
+    transform-origin: center;
     transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
 .open .bar.start {
-    transform: rotate(-450deg) translateX(.8rem);
+    transform: rotate(-450deg) translateX(-.4rem);
 }
 
 .bar.end {
     align-self: flex-end;
-    transform-origin: left;
+    transform-origin: center;
     transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
 .open .bar.end {
-    transform: rotate(-450deg) translateX(-.8rem);
+    transform: rotate(-450deg) translateX(.4rem);
 }
 
         @media only screen and (max-width: 800px) {
@@ -630,7 +677,7 @@ $arrow-head-thickness: $shaft-thickness;
 // ###################################################################
 // Urbanest Starts
 .urbanest {
-    height: auto;
+    height: 72vh;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
@@ -638,7 +685,8 @@ $arrow-head-thickness: $shaft-thickness;
     margin-top: 7.6vw;
     // margin-top: 11.93vw;
     // overflow: hidden;
-
+    // scroll-snap-align: center;
+    
     .urbanest-descrip {
         margin-top: 6vw;
         width: 41.67vw;
@@ -988,7 +1036,7 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    height: 100vh;
+    height: 90vh;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
@@ -996,6 +1044,7 @@ $anim-timing: 3s;
     margin-top: 8vw;
     margin-bottom: 11.56vw;
     // overflow: hidden;
+    // scroll-snap-align: center;
 
     .soultree-img {
         margin-top: -4vw;  // parallax
@@ -1169,7 +1218,8 @@ $anim-timing: 3s;
 // ###################################################################
 // Welcome Section Starts
 .welcome {
-    height: 40.16vw;
+    // height: 40.16vw;
+    height: 80vh;
     width: 100%;
     font-family: Titillium Web, sans-serif;
     color: $white-two;
@@ -1178,6 +1228,7 @@ $anim-timing: 3s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // scroll-snap-align: center;
 
     h1 {
         font-size: 3.13vw;
@@ -1398,10 +1449,11 @@ $anim-timing: 3s;
 // ###################################################################
 // About Section Starts
 .about {
-    height: auto;
+    height: 115vh;
     font-family: Titillium Web, sans-serif;
     color: $black;
     background-color: $white-two;
+    // scroll-snap-align: center;
 
     .about-descrip {
         padding: 6.61vw 0 5.71vw 0;
@@ -1619,10 +1671,11 @@ $anim-timing: 3s;
 // ####################################################################################
 //Blog Section Starts
 .blog {
-    height: auto;
+    height: 120vh;
     background-color: #fafafa;
     font-family: Titillium Web, sans-serif;
     color: $black;
+    // scroll-snap-align: center;
 }
 
 .blog-title>h1 {
@@ -1664,6 +1717,7 @@ $anim-timing: 3s;
 .blog i:hover {
     color: $white-two;
     background-color: $black;
+    
 }
 
 .main-swiper {
@@ -1975,10 +2029,11 @@ $anim-timing: 3s;
 // ####################################################################################
 // Contact Section Starts
 .contact {
-    height: auto;
+    height: 90vh;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
+    // scroll-snap-align: center;
 
     h1 {
         font-size: 3.13vw;
@@ -2144,6 +2199,101 @@ $anim-timing: 3s;
         //     transition:800ms ease all;
         // }
     }
+
+    .ico {
+        margin: -30% 0 0 50%;
+        text-align: center;
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: url("#goo");
+        .circle {
+          background: $circle-bg;
+          border-radius: 50%;
+          display: inline-block;
+          height: $circle-w;
+          width: $circle-w;
+          
+          position: absolute;
+          top: 50%;
+          left:50%;
+          transform: translateX(-50%) translateY(-50%);
+          transform-origin: 0%;
+        }
+        
+        
+        .st-arrow{
+          fill:$arrow-bg;
+          animation: scrolly $anim-timing $bezier forwards infinite;
+          perspective: 9000px;
+          transform: translateZ(0);
+          transform-origin: bottom;
+        }
+      }
+      
+      .svg {z-index:9;position:relative;}
+        
+      @keyframes blob-1-anim {
+        0%{
+          transform:translateX(-50%) translateY(0);
+        }
+        14%{
+          transform:translateX(-50%) translateY(-8px);
+        }
+        24% {
+          transform:translateX(-50%) translateY(0);
+        }
+        100% {
+          transform:translateX(-50%) translateY(0);
+        }
+      }
+      
+      @keyframes blob-2-anim {
+        0% {
+          //transform: scale(1) translate(-50%,-150%);
+          transform: scale(1) translate(-50%,10px);
+        }
+        30% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,10px);
+        }
+        70% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,10px);
+          
+        }
+        95% {
+          //transform: scale(1) translate(-50%,-50%);
+          transform: scale(1) translate(-50%,26px);
+          
+          
+        }
+        100% {
+          //transform: scaleX(1.5) translate(-50%,140%);
+          transform: scale(1) translate(-50%,10px);
+        }
+      }
+      
+      @keyframes scrolly {
+        0% {
+          transform: translate3d(0,-150%,0) rotateX(90deg) scale(0.5) skewX(3deg);
+        }
+        30% {
+          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        70% {
+          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        95% {
+          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+        100% {
+          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+      }
+
 }
 
             @media only screen and (max-width: 800px) {
@@ -2220,6 +2370,7 @@ $anim-timing: 3s;
     height: 100vh;
     background-color: $black;
     font-family: Titillium Web, sans-serif;
+    scroll-snap-align: center;
 }
 
 .footer-main {
