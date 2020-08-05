@@ -346,8 +346,8 @@ body {
 
 .bg-hamburger:before {
   content: "";
-  margin-left: 92.5vw;
-  width: 4vw;
+  margin-left: 92vw;
+  width: 4.5vw;
   height: 5vw;
   background-color: #ffffff;
   -webkit-transition: all 1s ease;
@@ -357,7 +357,7 @@ body {
 
 .btn-1:before {
   top: 0px;
-  left: -4vw;
+  left: -5vw;
 }
 
 .btn-1:hover:before {
@@ -1098,9 +1098,9 @@ body {
 }
 
 .soultree .soultree-img {
-  margin-top: -4vw;
+  margin-top: -5vw;
   width: 58.33vw;
-  height: 46vw;
+  height: 48vw;
   margin-left: 3.02vw;
   border-radius: 1.56vw;
   overflow: hidden;

@@ -397,8 +397,8 @@ $arrow-head-thickness: $shaft-thickness;
 
 .bg-hamburger:before{
     content: "";
-    margin-left: 92.5vw;
-    width: 4vw;
+    margin-left: 92vw;
+    width: 4.5vw;
     height: 5vw;
     background-color: $white-two;
     transition: all 1s ease;
@@ -407,7 +407,7 @@ $arrow-head-thickness: $shaft-thickness;
 
 .btn-1:before{
     top: 0px;
-    left: -4vw;
+    left: -5vw;
 }
 
 .btn-1:hover:before {
@@ -1047,9 +1047,9 @@ $anim-timing: 3s;
     // scroll-snap-align: center;
 
     .soultree-img {
-        margin-top: -4vw;  // parallax
+        margin-top: -5vw;  // parallax
         width: 58.33vw;
-        height: 46vw;      // parallax
+        height: 48vw;      // parallax
         margin-left: 3.02vw;
         border-radius: 1.56vw;
         overflow: hidden;
