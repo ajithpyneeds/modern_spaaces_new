@@ -104,7 +104,7 @@ body {
 
 
 
-$gray: #808080;
+$gray: $brownish-orange-two;
 
 $text-arrow-space: 16px;
 $shaft-width: 1px;
@@ -137,12 +137,12 @@ $arrow-head-thickness: $shaft-thickness;
     > .shaft {
         margin-top: -1.5px;
       width: 0;
-      background-color: $black;
+      background-color: $brownish-orange-two;
       
       &:before,
       &:after {
         width: 0;
-        background-color: $black;
+        background-color: $brownish-orange-two;
       }
 
       &:before {
@@ -181,7 +181,7 @@ $arrow-head-thickness: $shaft-thickness;
   }
 
   > .shaft {
-    background-color: $black;
+    background-color: $brownish-orange-two;
     display: block;
     height: $shaft-thickness;
     position: relative;
@@ -191,7 +191,7 @@ $arrow-head-thickness: $shaft-thickness;
 
     &:before,
     &:after {
-      background-color: $black;
+      background-color: $army-green;
       content: '';
       display: block;
       height: $arrow-head-thickness;
@@ -393,6 +393,13 @@ $arrow-head-thickness: $shaft-thickness;
     margin-right: 3.02vw;
     transition: all 1s ease;
     overflow: hidden;
+
+    // .menu-toggler:hover {
+    //     .bar {
+    //         background-color: $black;
+    //         transition: background-color 500;
+    //     }
+    // }
 }
 
 .bg-hamburger:before{
@@ -403,6 +410,8 @@ $arrow-head-thickness: $shaft-thickness;
     background-color: $white-two;
     transition: all 1s ease;
     position: absolute;
+
+    
 }
 
 .btn-1:before{
@@ -412,7 +421,6 @@ $arrow-head-thickness: $shaft-thickness;
 
 .btn-1:hover:before {
     left: 0;
-    
 }
 
 .top-nav {
@@ -481,7 +489,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .bar {
-    background: linear-gradient(to right, $brownish-orange-two, $army-green);   
+    background-color: $brownish-orange;
     width: 100%;
     height: 1px;
     border-radius: 5px;
@@ -497,7 +505,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .open .bar.start {
-    transform: rotate(-450deg) translateX(-.4rem);
+    transform: rotate(-90deg) translateX(-.4rem);
 }
 
 .bar.end {
@@ -507,7 +515,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .open .bar.end {
-    transform: rotate(-450deg) translateX(.4rem);
+    transform: rotate(-90deg) translateX(.4rem);
 }
 
         @media only screen and (max-width: 800px) {
@@ -682,7 +690,7 @@ $arrow-head-thickness: $shaft-thickness;
     color: $black;
     font-family: Titillium Web, sans-serif;
     display: flex;
-    margin-top: 7.6vw;
+    margin-top: 9vw;
     // margin-top: 11.93vw;
     // overflow: hidden;
     // scroll-snap-align: center;
@@ -769,7 +777,7 @@ $bezier-bounce: cubic-bezier(.87,-.41,.19,1.44);
 $anim-timing: 3s;
 
 .nextPro {
-    margin-top: 1.6vw ;
+    margin-top: 1vw ;
     // margin-top: 4.53vw ;
     margin-right: 3.02vw;
     display: flex;
@@ -1036,20 +1044,19 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    height: 90vh;
+    height: auto;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
     display: flex;
-    margin-top: 8vw;
     margin-bottom: 11.56vw;
     // overflow: hidden;
     // scroll-snap-align: center;
 
     .soultree-img {
-        margin-top: -5vw;  // parallax
+        margin-top: -2vw;  // parallax
         width: 58.33vw;
-        height: 48vw;      // parallax
+        height: 44vw;      // parallax
         margin-left: 3.02vw;
         border-radius: 1.56vw;
         overflow: hidden;
@@ -1063,7 +1070,7 @@ $anim-timing: 3s;
     }
 
     .soultree-descrip {
-        margin-top: 8vw;   //parallax
+        margin-top: 9vw;   //parallax
 
         // margin-top: 2.34vw;
         width: 41.67vw;
@@ -1219,7 +1226,7 @@ $anim-timing: 3s;
 // Welcome Section Starts
 .welcome {
     // height: 40.16vw;
-    height: 80vh;
+    height: 65vh;
     width: 100%;
     font-family: Titillium Web, sans-serif;
     color: $white-two;
@@ -1280,12 +1287,12 @@ $anim-timing: 3s;
   
       > .shaft {
         width: 0;
-        background-color: $white-two;
+        background-color: $brownish-orange-two;
         
         &:before,
         &:after {
           width: 0;
-          background-color: $white-two;
+          background-color: $brownish-orange-two;
         }
   
         &:before {
@@ -1324,7 +1331,7 @@ $anim-timing: 3s;
     }
   
     > .shaft {
-      background-color: $white-two;
+      background-color: $brownish-orange-two;
       display: block;
       height: $shaft-thickness;
       position: relative;
@@ -1372,7 +1379,7 @@ $anim-timing: 3s;
     transition: all 0.2s;
     
     &:hover {
-      color: $white-two;
+      color: $brownish-orange-two;
       text-decoration: none;
   
       
@@ -1380,13 +1387,13 @@ $anim-timing: 3s;
         > .shaft {
           width: $newshaft-width;
           transition-delay: 0.1s;
-          background-color: $white-two;
+          background-color: $brownish-orange-two;
   
           &:before,
           &:after {
             width: $arrow-head-width;
             transition-delay: 0.1s;
-            background-color: $white-two;
+            background-color: $brownish-orange-two;
           }
   
           &:before {
@@ -1705,6 +1712,7 @@ $anim-timing: 3s;
     height: 3.54vw;
     background-color: $white-two;
 }
+
 
 .blog .arrows .fa-angle-left {
     border-radius: .25vw 0 0 .25vw;
@@ -2029,7 +2037,7 @@ $anim-timing: 3s;
 // ####################################################################################
 // Contact Section Starts
 .contact {
-    height: 90vh;
+    height: 78vh;
     background-color: $white-two;
     color: $black;
     font-family: Titillium Web, sans-serif;
@@ -2199,101 +2207,6 @@ $anim-timing: 3s;
         //     transition:800ms ease all;
         // }
     }
-
-    .ico {
-        margin: -30% 0 0 50%;
-        text-align: center;
-        width: 2vw;
-        height: 2vw;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        filter: url("#goo");
-        .circle {
-          background: $circle-bg;
-          border-radius: 50%;
-          display: inline-block;
-          height: $circle-w;
-          width: $circle-w;
-          
-          position: absolute;
-          top: 50%;
-          left:50%;
-          transform: translateX(-50%) translateY(-50%);
-          transform-origin: 0%;
-        }
-        
-        
-        .st-arrow{
-          fill:$arrow-bg;
-          animation: scrolly $anim-timing $bezier forwards infinite;
-          perspective: 9000px;
-          transform: translateZ(0);
-          transform-origin: bottom;
-        }
-      }
-      
-      .svg {z-index:9;position:relative;}
-        
-      @keyframes blob-1-anim {
-        0%{
-          transform:translateX(-50%) translateY(0);
-        }
-        14%{
-          transform:translateX(-50%) translateY(-8px);
-        }
-        24% {
-          transform:translateX(-50%) translateY(0);
-        }
-        100% {
-          transform:translateX(-50%) translateY(0);
-        }
-      }
-      
-      @keyframes blob-2-anim {
-        0% {
-          //transform: scale(1) translate(-50%,-150%);
-          transform: scale(1) translate(-50%,10px);
-        }
-        30% {
-          //transform: scale(1) translate(-50%,-50%);
-          transform: scale(1) translate(-50%,10px);
-        }
-        70% {
-          //transform: scale(1) translate(-50%,-50%);
-          transform: scale(1) translate(-50%,10px);
-          
-        }
-        95% {
-          //transform: scale(1) translate(-50%,-50%);
-          transform: scale(1) translate(-50%,26px);
-          
-          
-        }
-        100% {
-          //transform: scaleX(1.5) translate(-50%,140%);
-          transform: scale(1) translate(-50%,10px);
-        }
-      }
-      
-      @keyframes scrolly {
-        0% {
-          transform: translate3d(0,-150%,0) rotateX(90deg) scale(0.5) skewX(3deg);
-        }
-        30% {
-          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
-        }
-        70% {
-          transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
-        }
-        95% {
-          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
-        }
-        100% {
-          transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
-        }
-      }
-
 }
 
             @media only screen and (max-width: 800px) {
