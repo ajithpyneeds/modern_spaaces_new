@@ -1,90 +1,89 @@
-$(document).ready(function() {
-    $('.menu-toggler').on('click', function() {
-        $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
-    });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    $('.top-nav .nav-link').on('click', function() {
-        $('.menu-toggler').removeClass('open');
-        $('.top-nav').removeClass('open');
-    });
-
-    $('nav a[href*="#"]').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 2000);
-    });
-
-    $('#up').on('click', function() {
-        $('html, body').animate({
-            scrollTop:0
-        }, 2000);
-    });
-});
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
 
-var totalItems = $('.item').length;
-var currentIndex = $('div.item.active').index() + 1;
-
-var down_index;
-$('.num').html(''+currentIndex+'/'+totalItems+'');
-
-    $(".next").click(function(){
-    currentIndex_active = $('div.item.active').index() + 2;
-    if (totalItems >= currentIndex_active)
-    {
-        down_index= $('div.item.active').index() + 2;
-        $('.num').html(''+currentIndex_active+'/'+totalItems+'');
-    }
-});
-
-    $(".prev").click(function(){
-        down_index=down_index-1;
-    if (down_index >= 1 )
-    {
-        $('.num').html(''+down_index+'/'+totalItems+'');
-    }
-});
-
-
-// Hidden Button Visibility On Hovering Over Cards
-// $(document).ready(function(){
-//   $(".about-hover-card, .blog-hover").hover(function(){
-//     $(this).css("transform", "translateY(-3.5vw)");
-//     });
-// });
-
-
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-
-  showSlides(slideIndex += n);
- 
+/* .visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
   
+} */
+
+/* h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+} */
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+  background: rgba(0,0,0,.1)
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 280px;
+  --card-height: 350px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+/* @media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+} */
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
 }
 
 
@@ -93,9 +92,27 @@ function showSlides(n) {
 
 
 
+    </style>
+</head>
+<body>
+    
 
-// About us carousel for mobile view
-const cardsContainer = document.querySelector(".card-carousel");
+<div class="container">
+  <div class="card-carousel">
+    <div class="card" id="1">
+      <div class="image-container"></div>
+    </div>
+    <div class="card" id="2">
+      <div class="image-container"></div>
+    </div>
+    <div class="card" id="3">
+      <div class="image-container"></div>
+    </div>  
+  </div>
+</div>
+
+    <script>
+        const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
 
 class DraggingEvent {
@@ -416,3 +433,6 @@ class CardCarousel extends DraggingEvent {
 }
 
 const carousel = new CardCarousel(cardsContainer)
+    </script>
+</body>
+</html>

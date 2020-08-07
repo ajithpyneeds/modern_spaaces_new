@@ -1188,7 +1188,7 @@ $anim-timing: 3s;
     margin-bottom: 11.56vw;
     // overflow: hidden;
     // scroll-snap-align: center;
-    background: red;
+    // background: red;
 
     .soultree-img {
         // margin-top: -2vw;  // parallax
@@ -1952,84 +1952,107 @@ $anim-timing: 3s;
                                         }
                                     }
                                 
-                                    .swiper-container {
+
+                                    .main-swiper {
                                         display: flex;
-                                        justify-content: space-between;
-                                        margin: auto;
-                                        margin-bottom: 21.7vw;
-                                        // overflow-x: visible;
-                                        background: red;
+                                        padding: 16vw 0 21vw 0;
+                                        background-color: $white-two;
                                     }
                                     
-                                    .swiper-slide {
-                                        width: 50vw;
-                                        height: 111.73vw;
-                                        border: solid 1px #ebebeb;
-                                        color: $black;
+                                    .blank {
+                                        width: 10%;
                                         background-color: $white-two;
-                                        display: block;
-                                        border-radius: 1vw;
-                                        background: yellow;
+                                        opacity: 0;
+                                        z-index: 2;
+                                    }
+
+
+                                    .swiper-container3 {
+                                        width: 90%;
+                                        height: 100%;
+                                        float: right;
+
+                                        .swiper-slide {
+                                            width: 76vw;
+                                            height: 112vw;
+                                            background: $white-two;
+                                            border-radius: 2.5vw;
+                                            box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
+                                            border: solid 1px #ebebeb;
+
+                                            .swiper-img {
+                                                width: 100%;
+                                                height: 39.5vw;
+
+                                                img {
+                                                    width: 100%;
+                                                    height: auto;
+                                                    border-radius: 2.5vw 2.5vw 0 0;
+                                                }
+                                            }
+
+                                            h2 {
+                                                font-size: 10.13vw;
+                                                font-weight: $fontBold;
+                                                line-height: 1.45;
+                                                margin: 5.6vw 6.93vw 4.8vw 6.93vw;
+                                                color: $white-two;
+                                                margin-top: -24vw;
+                                                text-align: center;
+                                            }
+
+                                            p {
+                                                position: relative;
+                                                font-size: 3.73vw;
+                                                font-weight: $fontThin;
+                                                line-height: 1.5;
+                                                margin-top: 40vw;
+                                                padding: 0 6.8vw;
+                                                text-align: left;
+                                            }
+
+                                            .btn {
+                                                display: none;
+                                                justify-content: center;
+                                            }
                                 
-                                        .btn {
-                                            display: none;
-                                            justify-content: center; 
-                                            margin-top: 2vw;
+                                            .btn1 {
+                                                text-decoration: none;
+                                            }
                                         }
                                     }
-                                    
-                                    .about-img {
-                                        width: 77vw;
-                                        height: auto;
-                                    }
-                                
-                                    .about-img>img {
-                                        width: 100%;
-                                        height: auto;
-                                        border-radius: 2vw 2vw 0 0;
-                                    }
-                                    
-                                    .about-hover-card>h2 {
-                                        margin-top: -12vw;
-                                        text-align: center;
-                                        font-weight: 600;
-                                        font-size: 10.13vw;
-                                        line-height: 1.38;
-                                        color: $white-two;
-                                    }
-                                    
-                                    .about-hover-card>p {
-                                        position: relative;
-                                        width: 66vw;
-                                        margin-top: 13vw;
-                                        padding-left: 8vw;
-                                        padding-right: 1.2vw;
-                                        font-size: 3.73vw;
-                                        font-weight: $fontThin;
-                                        line-height: 1.5;
-                                    }
-                                
-                                    // .about-card-div {
-                                    //     width: 50%;
-                                    //     margin: auto;
-                                    //     background: green;
-                                    // }
-                                    
-                                    .about-hover-card:hover {
-                                        box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-                                        transform: translateY(-2.2vw);
+
+                                    .swiper-slide:hover {
+                                        transform: translateY(-10.7vw);
                                         transition: 600ms transform;
-                                        border: solid 1px #ebebeb;
-                                        color: $black;
-                                        background-color: $white-two;
-                                
+                                        box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
+                            
                                         .btn {
                                             display: flex;
-                                            justify-content: center; 
-                                        }
-                                
-                                        .btn1 {
-                                            text-decoration: none;
+                                            justify-content: center;
+                                            margin-top: -36vw;
+                            
+                                            .btn1 {
+                                                display: flex;
+                                                border: none;
+                                            
+                                                p {
+                                                    font-size: 2.8vw;
+                                                    font-weight: $fontBold;
+                                                    letter-spacing: 1.5vw;
+                                                    background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                                                    -webkit-background-clip: text;
+                                                    -webkit-text-fill-color: transparent;
+                                                }
+                                            
+                                                p::after {
+                                                    content: '\f105';
+                                                    font-family: fontAwesome;
+                                                    font-size: 3.5vw;
+                                                    font-weight: $fontThin;
+                                                    padding-left: 1.2vw;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -2227,7 +2250,7 @@ $anim-timing: 3s;
                                     @media only screen and (max-width:768px) {
                                         .blog {
                                             height: auto;
-                                            background-color: #fafafa;
+                                            background-color: #f4f4f4;
                                             font-family: Titillium Web, sans-serif;
                                             color: $black;
                                             // scroll-snap-align: center;
@@ -2243,7 +2266,7 @@ $anim-timing: 3s;
                                         }
                                         
                                         .blog .arrows {
-                                            width: 77%;
+                                            width: 100%;
                                             margin: auto;
                                             text-align: center;
                                             display: flex;
@@ -2274,112 +2297,102 @@ $anim-timing: 3s;
                                             background-color: $black;
                                             
                                         }
-                                        
+
                                         .main-swiper {
                                             display: flex;
+                                            padding-top: 15.5vw;
+                                            background-color: #f4f4f4;
                                         }
                                         
                                         .blank {
-                                            width: 15%;
-                                            background-color: #fafafa;
+                                            width: 13%;
+                                            background-color: #f4f4f4;
                                             z-index: 2;
                                         }
                                         
-                                        .swiper-container2 {
-                                            width: 70%;
-                                            height: 100%;
-                                            display: flex;
-                                            margin-top: 7.14vw;
-                                            margin-bottom: 6vw;
                                         
-                                        .swiper-slide {
-                                            text-align: left;
-                                            font-size: 18px;
-                                            width: 100%;
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: center;
-                                            align-items: center;
-                                        
-                                                .blog-hover {
-                                                    height: 25vw;
-                                                    background-color: $white-two;
-                                                    color: $black;
-                                                    border-radius: .5vw;
-                                                    border: solid 1px #ebebeb;
-                                        
-                                                    .btn {
-                                                        display: none;
-                                                        justify-content: center;
-                                                    }
-                                        
-                                                    .btn1 {
-                                                        text-decoration: none;
-                                                    }
-                                                }
-                                                
-                                                .blog-hover:hover {
-                                                    transform: translateY(-1.5vw);
-                                                    transition: 600ms transform;
-                                                    box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-                                        
-                                                    .btn {
-                                                        display: flex;
-                                                        justify-content: center;
-                                        
-                                                        .btn1 {
-                                                            display: flex;
-                                                            border: none;
-                                                        
-                                                            p {
-                                                                font-size: .8vw;
-                                                                font-weight: $fontBold;
-                                                                letter-spacing: .25vw;
-                                                                background: linear-gradient(to right, $brownish-orange-two, $army-green);
-                                                                -webkit-background-clip: text;
-                                                                -webkit-text-fill-color: transparent;
-                                                            }
-                                                        
-                                                            p::after {
-                                                                content: '\f105';
-                                                                font-family: fontAwesome;
-                                                                font-size: 1vw;
-                                                                font-weight: $fontThin;
-                                                                padding-left: .6vw;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                        
-                                                img {
+                                        .swiper-container5 {
+                                            width: 87%;
+                                            height: 124vw;
+                                            float: right;
+
+                                            .swiper-slide {
+                                                width: 76vw;
+                                                height: 87vw;
+                                                background: $white-two;
+                                                border-radius: 2.5vw;
+                                                box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
+                                                border: solid 1px #ebebeb;
+
+                                                .swiper-img {
                                                     width: 100%;
-                                                    height: auto;
-                                                    border-radius: .5vw .5vw 0 0;
+                                                    height: 39.5vw;
+
+                                                    img {
+                                                        width: 100%;
+                                                        height: auto;
+                                                        border-radius: 2.5vw 2.5vw 0 0;
+                                                    }
                                                 }
-                                        
+
                                                 h4 {
-                                                    font-size: 1.3vw;
+                                                    font-size: 4.27vw;
                                                     font-weight: $fontBold;
-                                                    line-height: 1.4;
-                                                    padding: 2.2vw 3.5vw .5vw 3.5vw;
+                                                    line-height: 1.38;
+                                                    margin: 5.6vw 6.93vw 4.8vw 6.93vw;
                                                 }
-                                        
+
                                                 p {
-                                                    font-size: $p;
+                                                    font-size: 3.73vw;
                                                     font-weight: $fontThin;
-                                                    line-height: 1.4;
-                                                    padding: .4vw 3.5vw 0 3.5vw;
+                                                    line-height: 1.5;
+                                                    margin: 0 6.93vw 2vw 6.93vw;
                                                 }
-                                            }
-                                        
-                                            .swiper-slide:nth-child(odd) {
-                                                width: 80%;
-                                            }
-                                            
-                                            .swiper-slide:nth-child(even) {
-                                                width: 80%;
+
+                                                .btn {
+                                                    display: none;
+                                                    justify-content: center;
+                                                }
+                                    
+                                                .btn1 {
+                                                    text-decoration: none;
+                                                }
                                             }
                                         }
+
+                                        .swiper-slide:hover {
+                                            transform: translateY(-5.87vw);
+                                            transition: 600ms transform;
+                                            box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
+                                
+                                            .btn {
+                                                display: flex;
+                                                justify-content: center;
+                                
+                                                .btn1 {
+                                                    display: flex;
+                                                    border: none;
+                                                
+                                                    p {
+                                                        font-size: 2.8vw;
+                                                        font-weight: $fontBold;
+                                                        letter-spacing: 1.5vw;
+                                                        background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                                                        -webkit-background-clip: text;
+                                                        -webkit-text-fill-color: transparent;
+                                                    }
+                                                
+                                                    p::after {
+                                                        content: '\f105';
+                                                        font-family: fontAwesome;
+                                                        font-size: 3.5vw;
+                                                        font-weight: $fontThin;
+                                                        padding-left: 1.2vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
                                         
                                         .blog>.btn {
                                             padding: 0 0 6.41vw 0;
@@ -2402,7 +2415,7 @@ $anim-timing: 3s;
                                                 p::after {
                                                     content: '\f105';
                                                     font-family: fontAwesome;
-                                                    font-size: 1vw;
+                                                    font-size: 1.5vw;
                                                     font-weight: $fontThin;
                                                     padding-left: .6vw;
                                                 }
@@ -2831,12 +2844,20 @@ $anim-timing: 3s;
 
 @media only screen and (min-width:768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .content-mobile {
         display: none;
     }
 }
 
 @media only screen and (max-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .content-desktop {
         display: none;
