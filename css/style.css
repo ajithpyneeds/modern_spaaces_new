@@ -1026,28 +1026,31 @@ body {
 .nextPro .ico .circle {
   background: #000000;
   border-radius: 50%;
+  -webkit-display: inline-block;
   display: inline-block;
   height: 3vw;
   width: 3vw;
+  -webkit-position: absolute;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   -webkit-transform-origin: 0%;
-          transform-origin: 0%;
+  transform-origin: 0%;
 }
 
 .nextPro .ico .st-arrow {
+  -webkit-fill: #ffffff;
   fill: #ffffff;
   -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
-          animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
   -webkit-perspective: 9000px;
-          perspective: 9000px;
+  perspective: 9000px;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 .nextPro .svg {

@@ -1112,15 +1112,20 @@ $anim-timing: 3s;
         filter: url("#goo");
         .circle {
           background: $circle-bg;
+          -webkit-border-radius: 50%;
           border-radius: 50%;
+          -webkit-display: inline-block;
           display: inline-block;
           height: $circle-w;
           width: $circle-w;
           
+          -webkit-position: absolute;
           position: absolute;
           top: 50%;
           left:50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+          -webkit-transform-origin: 0%;
           transform-origin: 0%;
           
         //   &.circle-top {
@@ -1143,10 +1148,15 @@ $anim-timing: 3s;
         
         
         .st-arrow{
+          -webkit-fill: $arrow-bg;
           fill:$arrow-bg;
+          -webkit-animation: scrolly $anim-timing $bezier forwards infinite;
           animation: scrolly $anim-timing $bezier forwards infinite;
+          -webkit-perspective: 9000px;
           perspective: 9000px;
+          -webkit-transform: translateZ(0);
           transform: translateZ(0);
+          -webkit-transform-origin: bottom;
           transform-origin: bottom;
         }
       }
