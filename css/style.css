@@ -50,6 +50,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-display: flex;
   border: none;
 }
 
@@ -158,9 +159,12 @@ body {
 
 .animated-arrow {
   display: inline-block;
+  -webkit-display: inline-block;
   font-size: .8vw;
   font-weight: 600;
   letter-spacing: .25vw;
+  -webkit-background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  -webkit-background: linear-gradient(to right, #d49e1f, #534215);
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
   background: linear-gradient(to right, #d49e1f, #534215);
   -webkit-background-clip: text;
@@ -202,9 +206,9 @@ body {
 
 .animated-arrow:hover > .main {
   -webkit-transform: translateX(16px);
-          transform: translateX(16px);
+  transform: translateX(16px);
   -webkit-transform: translateX(79px);
-          transform: translateX(79px);
+  transform: translateX(79px);
 }
 
 .animated-arrow:hover > .main > .the-arrow.-right > .shaft {
@@ -234,6 +238,7 @@ body {
 }
 
 .animated-arrow > .main {
+  -webkit-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,10 +936,13 @@ body {
 }
 
 .urbanest .urbanest-descrip .btn1 {
+  -webkit-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
+  -webkit-background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  -webkit-background: linear-gradient(to right, #d49e1f, #534215);
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
   background: linear-gradient(to right, #d49e1f, #534215);
   -webkit-background-clip: text;

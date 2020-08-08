@@ -79,6 +79,7 @@ body {
 
 .btn1 {
     display: flex;
+    -webkit-display: flex;
     border: none;
 }
 
@@ -195,14 +196,17 @@ $arrow-head-thickness: $shaft-thickness;
   
   .animated-arrow {
     display: inline-block;
+    -webkit-display: inline-block;
     font-size: .8vw;
           font-weight: $fontBold;
           letter-spacing: .25vw;
+          -webkit-background: linear-gradient(to right,$brownish-orange-two, $army-green);
           background: linear-gradient(to right, $brownish-orange-two, $army-green);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
     text-decoration: none;
     position: relative;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     
     &:hover {
@@ -234,7 +238,9 @@ $arrow-head-thickness: $shaft-thickness;
       }
       
       > .main {
+        -webkit-transform: translateX($shaft-width + $text-arrow-space);
         transform: translateX($shaft-width + $text-arrow-space);
+        -webkit-transform: translateX($newshaft-width + $text-arrow-space);
         transform: translateX($newshaft-width + $text-arrow-space);
         
         > .the-arrow.-right {
@@ -263,6 +269,7 @@ $arrow-head-thickness: $shaft-thickness;
     }
     
     > .main {
+      -webkit-display: flex;
       display: flex;
       align-items: center;
       transition: all 0.2s;
@@ -542,6 +549,7 @@ $arrow-head-thickness: $shaft-thickness;
     background-color: $black;
     float: right;
     width: 4vw;
+    -webkit-border-radius: .5vw;
     border-radius: .5vw;
   }
   .hamRotate.active {
@@ -1016,8 +1024,10 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         .btn1 {
+            -webkit-display: flex;
             display: flex;
             border: none;
+            -webkit-background: linear-gradient(to right, $brownish-orange-two, $army-green);
             background: linear-gradient(to right, $brownish-orange-two, $army-green);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
