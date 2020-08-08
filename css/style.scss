@@ -794,6 +794,7 @@ $arrow-head-thickness: $shaft-thickness;
                                 stroke: $white-two;
                                 stroke-width: 3;
                                 stroke-linecap:round;
+                                z-index: 2500;
                               }
                               .ham1 .top {
                                 stroke-dasharray: 40 139;
@@ -1384,7 +1385,7 @@ $anim-timing: 3s;
                                 // margin-top: 11.93vw;
                                 // overflow: hidden;
                                 // scroll-snap-align: center;
-                                // background: red;
+                                background: red;
 
                                 .soultree-img {
                                     width: 93.5%;
@@ -1393,7 +1394,7 @@ $anim-timing: 3s;
                                     border-radius: 8vw;
                                     overflow: hidden;
                                     // margin-top: 21.1vw;
-                                    // background: green;
+                                    background: green;
                             
                                     img {
                                         width: 100%;

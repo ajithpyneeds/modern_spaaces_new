@@ -752,6 +752,7 @@ body {
     stroke: #ffffff;
     stroke-width: 3;
     stroke-linecap: round;
+    z-index: 2500;
   }
   .ham1 .top {
     stroke-dasharray: 40 139;
@@ -1343,6 +1344,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 11vw;
+    background: red;
   }
   .soultree .soultree-img {
     width: 93.5%;
@@ -1350,6 +1352,7 @@ body {
     margin: auto;
     border-radius: 8vw;
     overflow: hidden;
+    background: green;
   }
   .soultree .soultree-img img {
     width: 100%;
