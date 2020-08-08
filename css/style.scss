@@ -522,6 +522,60 @@ $arrow-head-thickness: $shaft-thickness;
     }
 }
 
+
+
+
+
+.ham {
+    cursor: pointer;
+    z-index: 2000;
+
+  
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    // margin-top: -2vw;
+    margin-left: 5vw;
+    background-color: $black;
+    float: right;
+    width: 4vw;
+    border-radius: .5vw;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: $white-two;
+    stroke-width: 3;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+
+
+
+
+
+
 .hamburger {
     width: 13%;
 }
@@ -687,13 +741,12 @@ $arrow-head-thickness: $shaft-thickness;
                                 color: $black;
                                 width: 100%;
                                 height: 18vw;
-                                display: flex;
-                                align-items: center;
                                 z-index: 1000;
                             }
 
                             .logo-container {
                                 z-index: 5;
+                                flex: 1;
 
                                 .logo {
                                     width: 47.5vw;
@@ -708,6 +761,57 @@ $arrow-head-thickness: $shaft-thickness;
                             }
 
                             
+
+
+
+                            .ham {
+                                cursor: pointer;
+                                z-index: 2000;
+
+                              
+                                -webkit-tap-highlight-color: transparent;
+                                transition: transform 400ms;
+                                -moz-user-select: none;
+                                -webkit-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                margin-top: -9.2vw;
+                                margin-right: 9vw;
+                                background-color: $black;
+                                float: right;
+                                width: 11vw;
+                                border-radius: 1.3vw;
+                              }
+                              .hamRotate.active {
+                                transform: rotate(45deg);
+                              }
+                              .hamRotate180.active {
+                                transform: rotate(180deg);
+                              }
+                              .line {
+                                fill:none;
+                                transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+                                stroke: $white-two;
+                                stroke-width: 3;
+                                stroke-linecap:round;
+                              }
+                              .ham1 .top {
+                                stroke-dasharray: 40 139;
+                              }
+                              .ham1 .bottom {
+                                stroke-dasharray: 40 180;
+                              }
+                              .ham1.active .top {
+                                stroke-dashoffset: -98px;
+                              }
+                              .ham1.active .bottom {
+                                stroke-dashoffset: -138px;
+                              }
+                              
+                              
+
+
+
 
                             // .hamburger:hover {
                             //     .bg-hamburger {
@@ -724,17 +828,17 @@ $arrow-head-thickness: $shaft-thickness;
                             //     }
                             // }
 
-                            .bg-hamburger {
-                                border: none;
-                                background-color: $black;
-                                height: 10.93vw;
-                                width: 10.93vw;
-                                border-radius: 1.33vw;
-                                margin-right: -77vw;
-                                transition: all 1s ease;
-                                overflow: hidden;
-                                margin-top: -9.5vw;
-                            
+                            // .bg-hamburger {
+                            //     border: none;
+                            //     background-color: $black;
+                            //     height: 10.93vw;
+                            //     width: 10.93vw;
+                            //     border-radius: 1.33vw;
+                            //     margin-right: -77vw;
+                            //     transition: all 1s ease;
+                            //     overflow: hidden;
+                            //     margin-top: -9.5vw;
+                            // }
 
                                 // .menu-toggler:hover {
                                 //     .bar {
@@ -742,33 +846,33 @@ $arrow-head-thickness: $shaft-thickness;
                                 //         transition: background-color 500;
                                 //     }
                                 // }
-                            }
+                            
 
-                            .bg-hamburger:before{
-                                content: "";
-                                margin-left: 77vw;
-                                margin-top: 2.5vw;
-                                width: 13vw;
-                                height: 12vw;
-                                background-color: $white-two;
-                                transition: all 1s ease;
-                                position: absolute;
-                            }
+                            // .bg-hamburger:before{
+                            //     content: "";
+                            //     margin-left: 77vw;
+                            //     margin-top: 2.5vw;
+                            //     width: 13vw;
+                            //     height: 12vw;
+                            //     background-color: $white-two;
+                            //     transition: all 1s ease;
+                            //     position: absolute;
+                            // }
 
-                            .btn-1:before{
-                                top: 0px;
-                                left: -12vw;
-                            }
+                            // .btn-1:before{
+                            //     top: 0px;
+                            //     left: -12vw;
+                            // }
 
-                            .btn-1:hover:before {
-                                left: 0;
-                            }
+                            // .btn-1:hover:before {
+                            //     left: 0;
+                            // }
 
                             .top-nav {
                                 width: 100%;
                                 height: 100vh;
                                 position: fixed;
-                                top: -100vh;
+                                top: -105vh;
                                 z-index: 50;
                                 background: $black;
                                 border-bottom-right-radius: 50%;
@@ -1850,76 +1954,98 @@ $anim-timing: 3s;
         justify-content: space-between;
         margin: auto;
         margin-bottom: 7.66vw;
-    }
-    
-    .about-hover-card {
-        flex: 1;
-        height: 28.70vw;
-        width: 18.65vw;
-        border: solid 1px #ebebeb;
-        color: $black;
-        background-color: $white-two;
-        display: block;
-        border-radius: .52vw;
 
-        .btn {
-            display: none;
-            justify-content: center; 
-            margin-top: 2vw;
-        }
-    }
-    
-    .about-img {
-        width: 18.65vw;
-        height: 50%;
-    }
+        .about-card-div {
+            width: 26%;
+            margin: auto;
 
-    .about-img>img {
-        width: 100%;
-        height: auto;
-        border-radius: .52vw .52vw 0 0;
-    }
-    
-    .about-hover-card>h2 {
-        margin-top: -12vw;
-        text-align: center;
-        font-weight: 600;
-        font-size: 2.71vw;
-        line-height: 1.38;
-        color: $white-two;
-    }
-    
-    .about-hover-card>p {
-        position: relative;
-        width: 18.65vw;
-        margin-top: 13vw;
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-        font-size: $p;
-        font-weight: 300;
-        line-height: 1.4;
-    }
+            .about-hover-card {
+                flex: 1;
+                height: 28.70vw;
+                width: 18.65vw;
+                border: solid 1px #ebebeb;
+                color: $black;
+                background-color: $white-two;
+                display: block;
+                border-radius: .52vw;
 
-    .about-card-div {
-        width: 26%;
-        margin: auto;
-    }
+                .about-img {
+                    width: 18.65vw;
+                    height: 50%;
     
-    .about-hover-card:hover {
-        box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-        transform: translateY(-2.2vw);
-        transition: 600ms transform;
-        border: solid 1px #ebebeb;
-        color: $black;
-        background-color: $white-two;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: .52vw .52vw 0 0;
+                    }
+                }
 
-        .btn {
-            display: flex;
-            justify-content: center; 
-        }
-
-        .btn1 {
-            text-decoration: none;
+                h2 {
+                    margin-top: -12vw;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 2.71vw;
+                    line-height: 1.38;
+                    color: $white-two;
+                }
+                
+                p {
+                    position: relative;
+                    width: 18.65vw;
+                    margin-top: 13vw;
+                    padding-left: 1.2vw;
+                    padding-right: 1.2vw;
+                    font-size: $p;
+                    font-weight: 300;
+                    line-height: 1.4;
+                }
+        
+                .btn {
+                    display: none;
+                    justify-content: center;
+                }
+        
+                .btn1 {
+                    text-decoration: none;
+                }
+            }
+            
+            .about-hover-card:hover {
+                box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
+                transform: translateY(-2.2vw);
+                transition: 600ms transform;
+                border: solid 1px #ebebeb;
+                color: $black;
+                background-color: $white-two;
+        
+                .btn {
+                    display: flex;
+                    justify-content: center;
+        
+                    .btn1 {
+                        display: flex;
+                        border: none;
+                        margin-top: -12vw;
+                    
+                        p {
+                            font-size: .8vw;
+                            font-weight: $fontBold;
+                            letter-spacing: .25vw;
+                            background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    
+                        p::after {
+                            content: '\f105';
+                            font-family: fontAwesome;
+                            font-size: 1vw;
+                            font-weight: $fontThin;
+                            padding-left: .6vw;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2266,7 +2392,7 @@ $anim-timing: 3s;
                                         }
                                         
                                         .blog .arrows {
-                                            width: 100%;
+                                            width: 82%;
                                             margin: auto;
                                             text-align: center;
                                             display: flex;
@@ -2844,7 +2970,7 @@ $anim-timing: 3s;
 
 @media only screen and (min-width:768px) {
 
-    body {
+    html {
         overflow-x: hidden;
     }
 
@@ -2855,7 +2981,7 @@ $anim-timing: 3s;
 
 @media only screen and (max-width:768px) {
 
-    body {
+    html {
         overflow-x: hidden;
     }
 
