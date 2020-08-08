@@ -1066,7 +1066,7 @@ $anim-timing: 3s;
     justify-content: flex-end;
     align-items: center;
     background-color: $white-two;
-    margin-bottom: 2vw;
+    margin-bottom: 8vw;
 
     .downArrow {
         width: 2vw;
@@ -1283,7 +1283,7 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    // height: 42vw;
+    height: 34.6vw;
     height: auto;
     background-color: $white-two;
     color: $black;
@@ -1292,16 +1292,14 @@ $anim-timing: 3s;
     margin-bottom: 11.56vw;
     // overflow: hidden;
     // scroll-snap-align: center;
-    // background: red;
 
     .soultree-img {
         // margin-top: -2vw;  // parallax
         width: 58.33vw;
-        height: 44vw;      // parallax
+        height: 34.6vw;      // parallax
         margin-left: 3.02vw;
         border-radius: 1.56vw;
         overflow: hidden;
-        // background: green;
 
 
         img {
@@ -1312,7 +1310,7 @@ $anim-timing: 3s;
     }
 
     .soultree-descrip {
-        margin-top: 9vw;   //parallax
+        margin-top: 2vw;   //parallax
 
         // margin-top: 2.34vw;
         width: 41.67vw;

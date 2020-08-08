@@ -980,7 +980,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  margin-bottom: 2vw;
+  margin-bottom: 8vw;
 }
 
 .nextPro .downArrow {
@@ -1245,6 +1245,7 @@ body {
 }
 
 .soultree {
+  height: 34.6vw;
   height: auto;
   background-color: #ffffff;
   color: #000000;
@@ -1257,7 +1258,7 @@ body {
 
 .soultree .soultree-img {
   width: 58.33vw;
-  height: 44vw;
+  height: 34.6vw;
   margin-left: 3.02vw;
   border-radius: 1.56vw;
   overflow: hidden;
@@ -1270,7 +1271,7 @@ body {
 }
 
 .soultree .soultree-descrip {
-  margin-top: 9vw;
+  margin-top: 2vw;
   width: 41.67vw;
   padding-right: 8.28vw;
   padding-left: 5.83vw;
