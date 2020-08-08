@@ -266,19 +266,19 @@
 
     <!-- Soultree Starts [Mobile]-->
     <section class="soultree content-mobile" id="soultree">
-        <div class="soultree-img" data-aos="fade-right" data-aos-delay="250">
+        <div class="soultree-img" data-aos="fade-right" data-aos-delay="200">
             <img class="rellax" data-rellax-percentage="0.5" src="images/soultreeMob/soultreeMob.jpg" srcset="images/soultreeMob/soultreeMob@2x.jpg 2x, images/soultreeMob/soultreeMob@3x.jpg 3x">
         </div>
 
         <div class="soultree-descrip">
-            <h2 data-aos="fade-down" data-aos-delay="300">Breathe a new sense of living!</h2>
-            <div class="soultreeLogo" data-aos="fade-left" data-aos-delay="200">
+            <h2 data-aos="fade-up" data-aos-delay="240">Breathe a new sense of living!</h2>
+            <div class="soultreeLogo" data-aos="fade-up" data-aos-delay="280">
                 <img src="images/soultreeLogo.png" alt="soultreeLogo">
             </div>
-            <p data-aos="fade-up" data-aos-delay="300">Come, discover homes for dynamic living at Soul Tree by Modern Spaaces. Premium 1, 2 and 3 BHK apartments built especially for the city dwellers among us. Wrapped in the natural surrounding & designed to aid your key life experiences, these fully automated smart homes should be your next destination.</p>
-            <p class="pBold" data-aos="fade-up" data-aos-delay="300">Location: Sompura Gate, Sarjapur road <br> Price: 15 Lakhs onwards</p>                
+            <p data-aos="fade-up" data-aos-delay="310">Come, discover homes for dynamic living at Soul Tree by Modern Spaaces. Premium 1, 2 and 3 BHK apartments built especially for the city dwellers among us. Wrapped in the natural surrounding & designed to aid your key life experiences, these fully automated smart homes should be your next destination.</p>
+            <p class="pBold" data-aos="fade-up" data-aos-delay="340">Location: Sompura Gate, Sarjapur road <br> Price: 15 Lakhs onwards</p>                
             <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
-            <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="320">
+            <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="370">
                 <span class="the-arrow -left"><span class="shaft"></span></span>
                 <span class="main">
                     <span class="text btn1">READ MORE</span>
@@ -295,7 +295,7 @@
     <section class="welcome">
         <h1 data-aos="fade-down" data-aos-delay="200">The Future is now</h1>
         <h2 class="content-desktop" data-aos="fade-up" data-aos-delay="200">Welcome to the new age of Smart Homes by Modern Spaaces</h2>
-        <h2 class="content-mobile" data-aos="fade-up" data-aos-delay="200">Welcome to the new age of <br> Smart Homes by Modern Spaaces</h2>
+        <h2 class="content-mobile" data-aos="fade-up" data-aos-delay="250">Welcome to the new age of <br> Smart Homes by Modern Spaaces</h2>
         <!-- <a href="#" class="btn1"><p>READ MORE</p></a> -->
         <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="400">
             <span class="the-arrow -left"><span class="shaft"></span></span>
@@ -903,10 +903,11 @@
         delay: 0.3,
         opacity: 0,
         x: -10,
-        ease: Power4.easeInOut
+        ease: Expo.easeInOut
         }, 0.08)
 
-        TweenMax.from('.hamburger', 1, {
+        TweenMax.from('.ham', 1, {
+        x: -20,
         delay: 0.4,
         opacity: 0,
         ease: Expo.easeInOut
