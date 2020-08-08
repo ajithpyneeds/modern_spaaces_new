@@ -48,6 +48,7 @@ $(document).ready(function() {
 
 
 
+
 var totalItems = $('.item').length;
 var currentIndex = $('div.item.active').index() + 1;
 

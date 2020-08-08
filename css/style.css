@@ -1229,7 +1229,7 @@ body {
     line-height: 1.5;
   }
   .urbanest .urbanest-descrip .pBold {
-    margin-bottom: 2.5vw;
+    margin-bottom: 4vw;
     font-weight: 600;
     line-height: 1.5;
   }
@@ -2096,13 +2096,35 @@ body {
     text-align: left;
   }
   .about .swiper-container3 .swiper-slide .btn {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: -36vw;
   }
-  .about .swiper-container3 .swiper-slide .btn1 {
-    text-decoration: none;
+  .about .swiper-container3 .swiper-slide .btn .btn1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+  }
+  .about .swiper-container3 .swiper-slide .btn .btn1 p {
+    font-size: 2.8vw;
+    font-weight: 600;
+    letter-spacing: 1.5vw;
+    background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+    background: linear-gradient(to right, #d49e1f, #534215);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about .swiper-container3 .swiper-slide .btn .btn1 p::after {
+    content: '\f105';
+    font-family: fontAwesome;
+    font-size: 3.5vw;
+    font-weight: 300;
+    padding-left: 1.2vw;
   }
   .about .swiper-slide:hover {
     -webkit-transform: translateY(-10.7vw);
@@ -2115,35 +2137,11 @@ body {
             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
   }
   .about .swiper-slide:hover .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: -36vw;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .about .swiper-slide:hover .btn .btn1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: none;
-  }
-  .about .swiper-slide:hover .btn .btn1 p {
-    font-size: 2.8vw;
-    font-weight: 600;
-    letter-spacing: 1.5vw;
-    background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-    background: linear-gradient(to right, #d49e1f, #534215);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .about .swiper-slide:hover .btn .btn1 p::after {
-    content: '\f105';
-    font-family: fontAwesome;
-    font-size: 3.5vw;
-    font-weight: 300;
-    padding-left: 1.2vw;
+    text-decoration: none;
   }
 }
 
@@ -2458,13 +2456,34 @@ body {
     margin: 0 6.93vw 2vw 6.93vw;
   }
   .swiper-container5 .swiper-slide .btn {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .swiper-container5 .swiper-slide .btn1 {
-    text-decoration: none;
+  .swiper-container5 .swiper-slide .btn .btn1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+  }
+  .swiper-container5 .swiper-slide .btn .btn1 p {
+    font-size: 2.8vw;
+    font-weight: 600;
+    letter-spacing: 1.5vw;
+    background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+    background: linear-gradient(to right, #d49e1f, #534215);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .swiper-container5 .swiper-slide .btn .btn1 p::after {
+    content: '\f105';
+    font-family: fontAwesome;
+    font-size: 3.5vw;
+    font-weight: 300;
+    padding-left: 1.2vw;
   }
   .swiper-slide:hover {
     -webkit-transform: translateY(-5.87vw);
@@ -2477,34 +2496,11 @@ body {
             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
   }
   .swiper-slide:hover .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .swiper-slide:hover .btn .btn1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: none;
-  }
-  .swiper-slide:hover .btn .btn1 p {
-    font-size: 2.8vw;
-    font-weight: 600;
-    letter-spacing: 1.5vw;
-    background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-    background: linear-gradient(to right, #d49e1f, #534215);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .swiper-slide:hover .btn .btn1 p::after {
-    content: '\f105';
-    font-family: fontAwesome;
-    font-size: 3.5vw;
-    font-weight: 300;
-    padding-left: 1.2vw;
+    text-decoration: none;
   }
   .blog > .btn {
     padding: 0 0 6.41vw 0;

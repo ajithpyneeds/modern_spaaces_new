@@ -1263,7 +1263,7 @@ $anim-timing: 3s;
                                 }
                         
                                 .pBold {
-                                    margin-bottom: 2.5vw;
+                                    margin-bottom: 4vw;
                                     font-weight: $fontBold;
                                     line-height: 1.5;
                                 }
@@ -2135,12 +2135,31 @@ $anim-timing: 3s;
                                             }
 
                                             .btn {
-                                                display: none;
+                                                display: flex;
                                                 justify-content: center;
-                                            }
+                                                margin-top: -36vw;
                                 
-                                            .btn1 {
-                                                text-decoration: none;
+                                                .btn1 {
+                                                    display: flex;
+                                                    border: none;
+                                                
+                                                    p {
+                                                        font-size: 2.8vw;
+                                                        font-weight: $fontBold;
+                                                        letter-spacing: 1.5vw;
+                                                        background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                                                        -webkit-background-clip: text;
+                                                        -webkit-text-fill-color: transparent;
+                                                    }
+                                                
+                                                    p::after {
+                                                        content: '\f105';
+                                                        font-family: fontAwesome;
+                                                        font-size: 3.5vw;
+                                                        font-weight: $fontThin;
+                                                        padding-left: 1.2vw;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -2149,32 +2168,12 @@ $anim-timing: 3s;
                                         transform: translateY(-10.7vw);
                                         transition: 600ms transform;
                                         box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-                            
+
                                         .btn {
-                                            display: flex;
-                                            justify-content: center;
-                                            margin-top: -36vw;
-                            
+                                            transform: scale(1.1);
+
                                             .btn1 {
-                                                display: flex;
-                                                border: none;
-                                            
-                                                p {
-                                                    font-size: 2.8vw;
-                                                    font-weight: $fontBold;
-                                                    letter-spacing: 1.5vw;
-                                                    background: linear-gradient(to right, $brownish-orange-two, $army-green);
-                                                    -webkit-background-clip: text;
-                                                    -webkit-text-fill-color: transparent;
-                                                }
-                                            
-                                                p::after {
-                                                    content: '\f105';
-                                                    font-family: fontAwesome;
-                                                    font-size: 3.5vw;
-                                                    font-weight: $fontThin;
-                                                    padding-left: 1.2vw;
-                                                }
+                                                text-decoration: none;
                                             }
                                         }
                                     }
@@ -2473,12 +2472,30 @@ $anim-timing: 3s;
                                                 }
 
                                                 .btn {
-                                                    display: none;
+                                                    display: flex;
                                                     justify-content: center;
-                                                }
                                     
-                                                .btn1 {
-                                                    text-decoration: none;
+                                                    .btn1 {
+                                                        display: flex;
+                                                        border: none;
+                                                    
+                                                        p {
+                                                            font-size: 2.8vw;
+                                                            font-weight: $fontBold;
+                                                            letter-spacing: 1.5vw;
+                                                            background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                                                            -webkit-background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                        }
+                                                    
+                                                        p::after {
+                                                            content: '\f105';
+                                                            font-family: fontAwesome;
+                                                            font-size: 3.5vw;
+                                                            font-weight: $fontThin;
+                                                            padding-left: 1.2vw;
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -2487,31 +2504,12 @@ $anim-timing: 3s;
                                             transform: translateY(-5.87vw);
                                             transition: 600ms transform;
                                             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-                                
+
                                             .btn {
-                                                display: flex;
-                                                justify-content: center;
-                                
+                                                transform: scale(1.1);
+
                                                 .btn1 {
-                                                    display: flex;
-                                                    border: none;
-                                                
-                                                    p {
-                                                        font-size: 2.8vw;
-                                                        font-weight: $fontBold;
-                                                        letter-spacing: 1.5vw;
-                                                        background: linear-gradient(to right, $brownish-orange-two, $army-green);
-                                                        -webkit-background-clip: text;
-                                                        -webkit-text-fill-color: transparent;
-                                                    }
-                                                
-                                                    p::after {
-                                                        content: '\f105';
-                                                        font-family: fontAwesome;
-                                                        font-size: 3.5vw;
-                                                        font-weight: $fontThin;
-                                                        padding-left: 1.2vw;
-                                                    }
+                                                    text-decoration: none;
                                                 }
                                             }
                                         }
