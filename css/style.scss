@@ -1120,21 +1120,27 @@ $anim-timing: 3s;
         height: 2vw;
         position: relative;
         top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         filter: url("#goo");
 
         .circle {
+          -webkit-background: $circle-bg;
           background: $circle-bg;
           -webkit-border-radius: 50%;
           border-radius: 50%;
           -webkit-display: inline-block;
           display: inline-block;
+          -webkit-height: $circle-w;
           height: $circle-w;
+          -webkit-width: $circle-w;
           width: $circle-w;
           
           -webkit-position: absolute;
           position: absolute;
+          -webkit-top: 50%;
           top: 50%;
+          -webkit-left: 50%;
           left:50%;
           -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -2031,10 +2037,13 @@ $anim-timing: 3s;
                 .btn {
                     display: none;
                     justify-content: center;
+                    text-align: center;
                 }
         
                 .btn1 {
                     text-decoration: none;
+                    margin-top: -11vw;
+
                 }
             }
             
@@ -2053,7 +2062,6 @@ $anim-timing: 3s;
                     .btn1 {
                         display: flex;
                         border: none;
-                        margin-top: -12vw;
                     
                         p {
                             font-size: .8vw;
@@ -2360,7 +2368,7 @@ $anim-timing: 3s;
             font-size: $p;
             font-weight: $fontThin;
             line-height: 1.4;
-            padding: .4vw 3.5vw 0 3.5vw;
+            padding: .4vw 3.5vw 1.5vw 3.5vw;
         }
     }
 

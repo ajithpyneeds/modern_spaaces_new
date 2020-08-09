@@ -1031,21 +1031,26 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-filter: url("#goo");
           filter: url("#goo");
 }
 
 .nextPro .ico .circle {
+  -webkit-background: #000000;
   background: #000000;
   border-radius: 50%;
   -webkit-display: inline-block;
   display: inline-block;
+  -webkit-height: 3vw;
   height: 3vw;
+  -webkit-width: 3vw;
   width: 3vw;
   -webkit-position: absolute;
   position: absolute;
+  -webkit-top: 50%;
   top: 50%;
+  -webkit-left: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -1987,10 +1992,12 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .about .about-cards .about-card-div .about-hover-card .btn1 {
   text-decoration: none;
+  margin-top: -11vw;
 }
 
 .about .about-cards .about-card-div .about-hover-card:hover {
@@ -2021,7 +2028,6 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   display: -ms-flexbox;
   display: flex;
   border: none;
-  margin-top: -12vw;
 }
 
 .about .about-cards .about-card-div .about-hover-card:hover .btn .btn1 p {
@@ -2344,7 +2350,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   font-size: 1.04vw;
   font-weight: 300;
   line-height: 1.4;
-  padding: .4vw 3.5vw 0 3.5vw;
+  padding: .4vw 3.5vw 1.5vw 3.5vw;
 }
 
 .swiper-container2 .swiper-slide:nth-child(odd) {
