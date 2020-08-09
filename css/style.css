@@ -2237,6 +2237,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 .blank {
   width: 15%;
   background-color: #fafafa;
+  opacity: 0;
   z-index: 2;
 }
 
@@ -2451,6 +2452,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   .blank {
     width: 13%;
     background-color: #f4f4f4;
+    opacity: 0;
     z-index: 2;
   }
   .swiper-container5 {
@@ -2606,6 +2608,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   border: none;
   padding-bottom: .5vw;
   width: 88%;
+  -webkit-border-bottom: 1px solid #000000;
   border-bottom: 1px solid #000000;
   font-size: 1.04vw;
   font-weight: 300;
@@ -2704,6 +2707,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   .contact .inputs input {
     border: none;
     padding-bottom: 4.93vw;
+    -webkit-border-bottom: 1px solid #000000;
     border-bottom: 1px solid #000000;
     font-size: 3.73vw;
     font-weight: 300;

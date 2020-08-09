@@ -2282,6 +2282,7 @@ $anim-timing: 3s;
 .blank {
     width: 15%;
     background-color: #fafafa;
+    opacity: 0;
     z-index: 2;
 }
 
@@ -2471,6 +2472,7 @@ $anim-timing: 3s;
                                         .blank {
                                             width: 13%;
                                             background-color: #f4f4f4;
+                                            opacity: 0;
                                             z-index: 2;
                                         }
                                         
@@ -2625,6 +2627,7 @@ $anim-timing: 3s;
             border: none;
             padding-bottom: .5vw;
             width: 88%;
+            -webkit-border-bottom: 1px solid $black;
             border-bottom: 1px solid $black;
             font-size: $p;
             font-weight: $fontThin;
@@ -2791,6 +2794,7 @@ $anim-timing: 3s;
                                         input {
                                             border: none;
                                             padding-bottom: 4.93vw;
+                                            -webkit-border-bottom: 1px solid $black;
                                             border-bottom: 1px solid $black;
                                             font-size: 3.73vw;
                                             font-weight: $fontThin;
