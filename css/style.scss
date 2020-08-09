@@ -2083,6 +2083,7 @@ $anim-timing: 3s;
                                     font-family: Titillium Web, sans-serif;
                                     color: $black;
                                     background-color: $white-two;
+                                    overflow-x: hidden;
                                     // scroll-snap-align: center;
                                 
                                     .about-descrip {
@@ -2218,6 +2219,7 @@ $anim-timing: 3s;
     background-color: #fafafa;
     font-family: Titillium Web, sans-serif;
     color: $black;
+    overflow-x: hidden;
     // scroll-snap-align: center;
 }
 
@@ -2405,6 +2407,7 @@ $anim-timing: 3s;
                                             background-color: #f4f4f4;
                                             font-family: Titillium Web, sans-serif;
                                             color: $black;
+                                            overflow-x: hidden;
                                             // scroll-snap-align: center;
                                         }
                                         
