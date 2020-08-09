@@ -1,19 +1,32 @@
-* {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
   overflow-y: scroll;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 .overlay {
@@ -2875,18 +2888,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  html {
-    overflow-x: hidden;
-  }
   .content-mobile {
     display: none;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  html {
-    overflow-x: hidden;
-  }
   .content-desktop {
     display: none;
   }
