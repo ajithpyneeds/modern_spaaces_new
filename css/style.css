@@ -9,11 +9,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 audio, canvas, iframe, img, svg, video {
@@ -1373,6 +1373,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     width: 93.5%;
     height: 97.8vw;
     margin: auto;
+    margin-top: -10vw;
     border-radius: 8vw;
     overflow: hidden;
   }
@@ -2175,7 +2176,6 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   background-color: #fafafa;
   font-family: Titillium Web, sans-serif;
   color: #000000;
-  overflow-x: hidden;
 }
 
 .blog-title > h1 {

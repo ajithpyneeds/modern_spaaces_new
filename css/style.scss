@@ -34,11 +34,11 @@ $fontThin: 300;
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
-    overflow-y: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 audio, canvas, iframe, img, svg, video {
@@ -1420,6 +1420,7 @@ $anim-timing: 3s;
                                     width: 93.5%;
                                     height: 97.8vw;
                                     margin: auto;
+                                    margin-top: -10vw;
                                     border-radius: 8vw;
                                     overflow: hidden;
                                     // margin-top: 21.1vw;
@@ -2219,7 +2220,7 @@ $anim-timing: 3s;
     background-color: #fafafa;
     font-family: Titillium Web, sans-serif;
     color: $black;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     // scroll-snap-align: center;
 }
 
