@@ -2094,7 +2094,6 @@ $anim-timing: 3s;
                                     font-family: Titillium Web, sans-serif;
                                     color: $black;
                                     background-color: $white-two;
-                                    // overflow-x: hidden;
                                     // scroll-snap-align: center;
                                 
                                     .about-descrip {
@@ -2136,6 +2135,7 @@ $anim-timing: 3s;
                                         width: 90%;
                                         height: 100%;
                                         float: right;
+                                        overflow-x: hidden;
 
                                         .swiper-slide {
                                             width: 76vw;
@@ -2419,7 +2419,6 @@ $anim-timing: 3s;
                                             background-color: #f4f4f4;
                                             font-family: Titillium Web, sans-serif;
                                             color: $black;
-                                            // overflow-x: hidden;
                                             // scroll-snap-align: center;
                                         }
                                         
@@ -2483,6 +2482,7 @@ $anim-timing: 3s;
                                             width: 87%;
                                             height: 124vw;
                                             float: right;
+                                            overflow-x: hidden;
 
                                             .swiper-slide {
                                                 width: 76vw;

@@ -2089,6 +2089,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     width: 90%;
     height: 100%;
     float: right;
+    overflow-x: hidden;
   }
   .about .swiper-container3 .swiper-slide {
     width: 76vw;
@@ -2457,6 +2458,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     width: 87%;
     height: 124vw;
     float: right;
+    overflow-x: hidden;
   }
   .swiper-container5 .swiper-slide {
     width: 76vw;
