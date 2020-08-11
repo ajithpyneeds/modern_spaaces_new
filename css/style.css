@@ -1208,7 +1208,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 @media only screen and (max-width: 768px) {
   .urbanest {
-    height: auto;
+    height: 206vw;
     background-color: #ffffff;
     color: #000000;
     font-family: Titillium Web, sans-serif;
@@ -1295,6 +1295,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .soultree .soultree-img img {
+  margin-top: -4vw;
   width: 100%;
   height: auto;
   border-radius: 1.56vw;
@@ -1365,20 +1366,19 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 @media only screen and (max-width: 768px) {
   .soultree {
-    height: auto;
+    height: 240vw;
     background-color: #ffffff;
     color: #000000;
     font-family: Titillium Web, sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 11vw;
+    margin-bottom: 0vw;
   }
   .soultree .soultree-img {
     width: 93.5%;
     height: 97.8vw;
     margin: auto;
-    margin-top: -10vw;
     border-radius: 8vw;
     overflow: hidden;
   }
@@ -2050,11 +2050,10 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 @media only screen and (max-width: 768px) {
   .about {
-    height: auto;
+    height: 220vw;
     font-family: Titillium Web, sans-serif;
     color: #000000;
     background-color: #ffffff;
-    overflow-x: hidden;
   }
   .about .about-descrip {
     padding: 22.4vw 0 5.6vw 0;
@@ -2399,11 +2398,10 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 @media only screen and (max-width: 768px) {
   .blog {
-    height: auto;
+    height: 173vw;
     background-color: #f4f4f4;
     font-family: Titillium Web, sans-serif;
     color: #000000;
-    overflow-x: hidden;
   }
   .blog-title > h1 {
     padding-top: 17.87vw;
@@ -2537,37 +2535,6 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   .swiper-slide:hover .btn .btn1 {
     text-decoration: none;
   }
-  .blog > .btn {
-    padding: 0 0 6.41vw 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .blog > .btn .btn1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: none;
-    background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-    background: linear-gradient(to right, #d49e1f, #534215);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .blog > .btn .btn1 p {
-    font-size: .8vw;
-    font-weight: 600;
-    letter-spacing: .25vw;
-  }
-  .blog > .btn .btn1 p::after {
-    content: '\f105';
-    font-family: fontAwesome;
-    font-size: 1.5vw;
-    font-weight: 300;
-    padding-left: .6vw;
-  }
 }
 
 .contact {
@@ -2686,7 +2653,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 @media only screen and (max-width: 768px) {
   .contact {
-    height: 165vw;
+    height: 183vw;
     background-color: #ffffff;
     color: #000000;
     font-family: Titillium Web, sans-serif;
@@ -2695,7 +2662,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     font-size: 8.53vw;
     font-weight: 600;
     line-height: 1.56;
-    margin-top: 15.2vw;
+    padding-top: 15.2vw;
     margin-left: 6.7vw;
     margin-bottom: 14.13vw;
   }
