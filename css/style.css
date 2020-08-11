@@ -2520,23 +2520,6 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     font-weight: 300;
     padding-left: 1.2vw;
   }
-  .swiper-slide:hover {
-    -webkit-transform: translateY(-5.87vw);
-            transform: translateY(-5.87vw);
-    -webkit-transition: 600ms -webkit-transform;
-    transition: 600ms -webkit-transform;
-    transition: 600ms transform;
-    transition: 600ms transform, 600ms -webkit-transform;
-    -webkit-box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-            box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-  }
-  .swiper-slide:hover .btn {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .swiper-slide:hover .btn .btn1 {
-    text-decoration: none;
-  }
 }
 
 .contact {
