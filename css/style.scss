@@ -2097,7 +2097,7 @@ $anim-timing: 3s;
                                     // scroll-snap-align: center;
                                 
                                     .about-descrip {
-                                        padding: 22.4vw 0 5.6vw 0;
+                                        padding-top: 16vw;
                                         width: 88%;
                                         text-align: center;
                                         margin: auto;
@@ -2119,8 +2119,11 @@ $anim-timing: 3s;
 
                                     .main-swiper {
                                         display: flex;
-                                        padding: 16vw 0 21vw 0;
+                                        // padding: 16vw 0 21vw 0;
+                                        margin-top: 0vw;
+                                        margin-bottom: 21vw;
                                         background-color: $white-two;
+                                        overflow-x: hidden;
                                     }
                                     
                                     .blank {
@@ -2135,12 +2138,11 @@ $anim-timing: 3s;
                                         width: 90%;
                                         height: 100%;
                                         float: right;
-                                        overflow-x: hidden;
 
                                         .swiper-slide {
                                             width: 76vw;
                                             height: 112vw;
-                                            background: $white-two;
+                                            background-color: $white-two;
                                             border-radius: 2.5vw;
                                             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
                                             border: solid 1px #ebebeb;
@@ -2148,6 +2150,7 @@ $anim-timing: 3s;
                                             .swiper-img {
                                                 width: 100%;
                                                 height: 39.5vw;
+                                                border-radius: 2.5vw 2.5vw 0 0;
 
                                                 img {
                                                     width: 100%;
@@ -2468,6 +2471,7 @@ $anim-timing: 3s;
                                             display: flex;
                                             padding-top: 15.5vw;
                                             background-color: #f4f4f4;
+                                            overflow-x: hidden;
                                         }
                                         
                                         .blank {
@@ -2482,7 +2486,6 @@ $anim-timing: 3s;
                                             width: 87%;
                                             height: 124vw;
                                             float: right;
-                                            overflow-x: hidden;
 
                                             .swiper-slide {
                                                 width: 76vw;
