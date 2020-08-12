@@ -2136,7 +2136,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: -36vw;
+    margin-top: -30vw;
   }
   .about .swiper-container3 .swiper-slide .btn .btn1 {
     display: -webkit-box;
@@ -2169,10 +2169,6 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
     transition: 600ms transform, 600ms -webkit-transform;
     -webkit-box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.16);
-  }
-  .about .swiper-slide:hover .btn {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .about .swiper-slide:hover .btn .btn1 {
     text-decoration: none;
