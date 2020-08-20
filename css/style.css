@@ -465,7 +465,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .social-icons {
-  width: 17%;
+  width: 18%;
   z-index: 5;
 }
 
@@ -491,16 +491,14 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 .box {
   z-index: 3000;
-  margin-left: 90vw;
+  margin-left: 93vw;
   border-radius: 3px;
   position: absolute;
   width: 2.8vw;
   height: 2.8vw;
   background: #000000;
-  -webkit-box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  -webkit-transition: width 700ms;
-  transition: width 700ms;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .box .btn11 {
@@ -1073,24 +1071,22 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   display: -ms-flexbox;
   display: flex;
   border: none;
-  -webkit-background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-  -webkit-background: linear-gradient(to right, #d49e1f, #534215);
+}
+
+.urbanest .urbanest-descrip .btn1 p {
+  font-size: .9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
   background: linear-gradient(to right, #d49e1f, #534215);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.urbanest .urbanest-descrip .btn1 p {
-  font-size: .8vw;
-  font-weight: 600;
-  letter-spacing: .25vw;
-}
-
 .urbanest .urbanest-descrip .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -1129,8 +1125,8 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .nextPro .downArrow {
-  width: 2vw;
-  height: 4vw;
+  width: 1.5vw;
+  height: 3vw;
   margin-right: .7vw;
   margin-top: .7vw;
 }
@@ -1147,38 +1143,18 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .nextPro .ico {
-  margin: 1.6% 1.5% 0 0;
+  margin: 2.5% 1.2% 0 0;
   text-align: center;
-  width: 2vw;
-  height: 2vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
   position: relative;
+  background: #000000;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-filter: url("#goo");
           filter: url("#goo");
-}
-
-.nextPro .ico .circle {
-  -webkit-background: #000000;
-  background: #000000;
-  border-radius: 50%;
-  -webkit-display: inline-block;
-  display: inline-block;
-  -webkit-height: 3vw;
-  height: 3vw;
-  -webkit-width: 3vw;
-  width: 3vw;
-  -webkit-position: absolute;
-  position: absolute;
-  -webkit-top: 50%;
-  top: 50%;
-  -webkit-left: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-transform-origin: 0%;
-  transform-origin: 0%;
 }
 
 .nextPro .ico .st-arrow {
@@ -1463,28 +1439,33 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .soultree .soultree-descrip .btn1 {
+  -webkit-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
+}
+
+.soultree .soultree-descrip .btn1 p {
+  font-size: .9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
   background: linear-gradient(to right, #d49e1f, #534215);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.soultree .soultree-descrip .btn1 p {
-  font-size: .8vw;
-  font-weight: 600;
-  letter-spacing: .25vw;
-}
-
 .soultree .soultree-descrip .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1589,28 +1570,33 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .welcome .btn1 {
+  -webkit-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
+}
+
+.welcome .btn1 p {
+  font-size: .9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
   background: linear-gradient(to right, #d49e1f, #534215);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.welcome .btn1 p {
-  font-size: .8vw;
-  font-weight: 600;
-  letter-spacing: .25vw;
-}
-
 .welcome .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .welcome .the-arrow {
@@ -2119,8 +2105,32 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .about .about-cards .about-card-div .about-hover-card .btn1 {
-  text-decoration: none;
   margin-top: -11vw;
+  -webkit-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  -webkit-background: linear-gradient(to right, #d49e1f, #534215);
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about-cards .about-card-div .about-hover-card .btn1 p {
+  font-size: .9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
+}
+
+.about .about-cards .about-card-div .about-hover-card .btn1 p::after {
+  content: '\f105';
+  font-family: fontAwesome;
+  font-size: .9vw;
+  font-weight: 300;
+  padding-left: .6vw;
 }
 
 .about .about-cards .about-card-div .about-hover-card:hover {
@@ -2154,7 +2164,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .about .about-cards .about-card-div .about-hover-card:hover .btn .btn1 p {
-  font-size: .8vw;
+  font-size: .9vw;
   font-weight: 600;
   letter-spacing: .25vw;
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
@@ -2166,7 +2176,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 .about .about-cards .about-card-div .about-hover-card:hover .btn .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -2487,7 +2497,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 }
 
 .swiper-container2 .swiper-slide .blog-hover:hover .btn .btn1 p {
-  font-size: .8vw;
+  font-size: .9vw;
   font-weight: 600;
   letter-spacing: .25vw;
   background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
@@ -2499,7 +2509,7 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 .swiper-container2 .swiper-slide .blog-hover:hover .btn .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
 }
@@ -2532,39 +2542,66 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   width: 80%;
 }
 
-.blog > .btn {
-  padding: 0 0 6.41vw 0;
+.circle-center {
+  width: 12%;
+  text-align: center;
+  margin: auto;
+}
+
+.circle-center .circle-slide {
+  margin-bottom: 6.41vw;
+  color: #000000;
+  height: 2.8vw;
+  width: 2.8vw;
+  border-radius: 1.4vw;
+  background: #000000;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.circle-center .circle-slide a {
+  font-size: 0.9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 2.8vw;
+  width: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
 }
 
-.blog > .btn .btn1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
-  background: linear-gradient(to right, #d49e1f, #534215);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.blog > .btn .btn1 p {
-  font-size: .8vw;
-  font-weight: 600;
-  letter-spacing: .25vw;
-}
-
-.blog > .btn .btn1 p::after {
+.circle-center .circle-slide a::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
+  color: #d49e1f;
+}
+
+.circle-center .circle-slide:hover {
+  height: 2.8vw;
+  width: 10vw;
+}
+
+.circle-center .circle-slide:hover a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.circle-center .circle-slide:hover a::after {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2719,11 +2756,13 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
 
 .contact .inputs .inputA {
   display: block;
+  width: 50%;
 }
 
 .contact .inputs .inputB {
   display: block;
   text-align: right;
+  width: 50%;
 }
 
 .contact .inputs input {
@@ -2737,73 +2776,53 @@ a, area, button, input, label, select, summary, textarea, [tabindex] {
   margin-bottom: 3.57vw;
 }
 
-.contact .inputs .btnB {
-  width: 12.4vw;
+.contact .inputs .buttn {
+  margin-top: -1vw;
+  margin-left: 22.4vw;
   height: 3.54vw;
-  padding-left: .8vw;
-  font-size: .8vw;
-  letter-spacing: 2px;
-  font-weight: 600;
+  width: 12.4vw;
   background-color: #000000;
-  color: #ffffff;
   border-radius: 0.26vw;
-  margin-top: -2vw;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.contact .inputs .buttn .black-button {
   border: none;
-  position: relative;
+  height: 3.54vw;
+  width: 12.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9vw;
+  letter-spacing: 3.44px;
+  border-radius: 0.26vw;
+  font-weight: 600;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.contact .inputs .btnB span:after {
-  color: #000000;
+.contact .inputs .buttn:hover {
+  height: 3.54vw;
+  width: 0;
+}
+
+.contact .inputs .buttn:hover .black-button::after {
   content: '\f105';
   font-family: fontAwesome;
-  font-size: 1vw;
+  font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
-}
-
-.contact .inputs .btnB.btn-background-slide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #ffffff;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-}
-
-.contact .inputs .btnB.btn-background-slide:hover::before,
-.contact .inputs .btnB.btn-background-slide:focus::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.contact .inputs .btnB.btn-background-slide {
-  -webkit-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
-  z-index: 1;
-}
-
-.contact .inputs .btnB.btn-background-slide:hover,
-.contact .inputs .btnB.btn-background-slide:focus {
   color: #000000;
-}
-
-.contact .inputs .btnB.btn-background-slide:hover span:after,
-.contact .inputs .btnB.btn-background-slide:focus span:after {
-  content: '\f105';
-  font-family: fontAwesome;
-  font-size: 1vw;
-  font-weight: 300;
-  padding-left: .6vw;
 }
 
 @media only screen and (max-width: 768px) {
