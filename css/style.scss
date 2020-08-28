@@ -770,10 +770,6 @@ $arrow-head-thickness: $shaft-thickness;
                                 }
                             }
 
-                            
-
-
-
                             .ham {
                                 cursor: pointer;
                                 z-index: 2000;
@@ -819,66 +815,6 @@ $arrow-head-thickness: $shaft-thickness;
                                 stroke-dashoffset: -138px;
                               }
                               
-                              
-
-
-
-
-                            // .hamburger:hover {
-                            //     .bg-hamburger {
-                            //         width: 3.54vw;
-                            //         background-color: $white-two;
-                            //         transition: background-color width 800;
-
-                            //         .menu-toggler {
-                            //             .bar {
-                            //                 background-color: $black;
-                            //                 transition: background-color 500;
-                            //             }
-                            //         }
-                            //     }
-                            // }
-
-                            // .bg-hamburger {
-                            //     border: none;
-                            //     background-color: $black;
-                            //     height: 10.93vw;
-                            //     width: 10.93vw;
-                            //     border-radius: 1.33vw;
-                            //     margin-right: -77vw;
-                            //     transition: all 1s ease;
-                            //     overflow: hidden;
-                            //     margin-top: -9.5vw;
-                            // }
-
-                                // .menu-toggler:hover {
-                                //     .bar {
-                                //         background-color: $black;
-                                //         transition: background-color 500;
-                                //     }
-                                // }
-                            
-
-                            // .bg-hamburger:before{
-                            //     content: "";
-                            //     margin-left: 77vw;
-                            //     margin-top: 2.5vw;
-                            //     width: 13vw;
-                            //     height: 12vw;
-                            //     background-color: $white-two;
-                            //     transition: all 1s ease;
-                            //     position: absolute;
-                            // }
-
-                            // .btn-1:before{
-                            //     top: 0px;
-                            //     left: -12vw;
-                            // }
-
-                            // .btn-1:hover:before {
-                            //     left: 0;
-                            // }
-
                             .top-nav {
                                 width: 100%;
                                 height: 100vh;
@@ -983,8 +919,8 @@ $arrow-head-thickness: $shaft-thickness;
     color: $black;
     font-family: Titillium Web, sans-serif;
     display: flex;
-    margin-top: 9vw;
-    // margin-top: 11.93vw;
+    margin-top: 8.8vw;
+    overflow: hidden;
     // scroll-snap-align: center;
 
     
@@ -1050,18 +986,16 @@ $arrow-head-thickness: $shaft-thickness;
     }
 
     .urbanest-img {
-        width: 55.3vw;
+        height: 34vw;
+        width: 55.31vw;
         margin-right: 3.02vw; 
         border-radius: 1.56vw;
         overflow: hidden;
 
         img {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
             width: 100%;
-            height: auto;
+            object-fit: cover;
+            height: 100%;
             border-radius: 1.56vw;
         }
     }
@@ -1323,7 +1257,7 @@ $anim-timing: 3s;
 // ###################################################################
 // Soultree Starts
 .soultree {
-    height: 34.6vw;
+    height: 34vw;
     height: auto;
     background-color: $white-two;
     color: $black;
@@ -1334,16 +1268,16 @@ $anim-timing: 3s;
 
     .soultree-img {
         // margin-top: -2vw;  // parallax
-        width: 58.33vw;
-        height: 34.6vw;      // parallax
+        width: 55.31vw;
+        height: 34vw;      // parallax
         margin-left: 3.02vw;
         border-radius: 1.56vw;
         overflow: hidden;
 
         img {
-            margin-top: -4vw;
-            width: 100%;
-            height: auto;
+            // margin-top: -4vw;
+            width: 105%;
+            height: 105%;
             border-radius: 1.56vw;
         }
     }
@@ -2459,61 +2393,94 @@ $anim-timing: 3s;
       }
 }
 
+.blog .btn1 {
+  display: flex;
+  justify-content: center;
+  border: none;
 
-
-.circle-center {
-  width: 12%;
-  text-align: center;
-  margin: auto;
-
-  .circle-slide {
-      margin-bottom: 6.41vw;
-      color: $black;
-      height: 2.8vw;
-      width: 2.8vw;
-      border-radius: 1.4vw;
-      background: $black;
-      transition: width 500ms;
-
-      a {
-          font-size: 0.9vw;
-          font-weight: $fontBold;
-          letter-spacing: .25vw;
-          background: linear-gradient(to right, $brownish-orange-two, $army-green);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          height: 2.8vw;
-          width: 10vw;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-      }
-
-      a::after {
-          content: '\f105';
-          font-family: fontAwesome;
-          font-size: .9vw;
-          font-weight: $fontThin;
-          padding-left: .6vw;
-          color: $brownish-orange-two;
-      }
+  p {
+      font-size: .9vw;
+      font-weight: $fontBold;
+      letter-spacing: .25vw;
+      background: linear-gradient(to right, $brownish-orange-two, $army-green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 
-  .circle-slide:hover {
-      height: 2.8vw;
-      width: 10vw;
+  p::after {
+      content: '\f105';
+      font-family: fontAwesome;
+      font-size: .9vw;
+      font-weight: $fontThin;
+      padding-left: .6vw;
+  }
 
-      a {
-          color: $white-two;
-          text-decoration: none;
-      }
-
-      a::after {
-          color: $white-two;
-      }
+  p:hover,
+  p::after:hover {
+    color: $army-green;
   }
 }
+
+// .blog .btn1:hover {
+//   p,
+//   p::after {
+//     color: $army-green;
+//   }
+// }
+
+// .circle-center {
+//   width: 12%;
+//   text-align: center;
+//   margin: auto;
+
+//   .circle-slide {
+//       margin-bottom: 6.41vw;
+//       color: $black;
+//       height: 2.8vw;
+//       width: 2.8vw;
+//       border-radius: 1.4vw;
+//       background: $black;
+//       transition: width 500ms;
+
+//       a {
+//           font-size: 0.9vw;
+//           font-weight: $fontBold;
+//           letter-spacing: .25vw;
+//           background: linear-gradient(to right, $brownish-orange-two, $army-green);
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//           height: 2.8vw;
+//           width: 10vw;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           text-decoration: none;
+//       }
+
+//       a::after {
+//           content: '\f105';
+//           font-family: fontAwesome;
+//           font-size: .9vw;
+//           font-weight: $fontThin;
+//           padding-left: .6vw;
+//           color: $brownish-orange-two;
+//       }
+//   }
+
+//   .circle-slide:hover {
+//       height: 2.8vw;
+//       width: 10vw;
+
+//       a {
+//           color: $white-two;
+//           text-decoration: none;
+//       }
+
+//       a::after {
+//           color: $white-two;
+//       }
+//   }
+// }
 
 // .blog>.btn {
 //     padding: 0 0 6.41vw 0;
@@ -2973,13 +2940,14 @@ $anim-timing: 3s;
 .footer-title {
     flex: 1;
     margin-left: 15vw;
-    margin-top: 16vw;
+    font-weight: $fontThin;
+    margin-top: 14vw;
     font-size: 3.75vw;
     line-height: 1.11;
 }
 
 .footer-nav-items {
-    margin-top: 16vw;
+    margin-top: 14vw;
     margin-left: 10vw;
     flex: 1;
     font-size: $p;
@@ -2988,6 +2956,11 @@ $anim-timing: 3s;
     a {
         color: $white-two;
     }
+
+    a:hover {
+      text-decoration: none;
+      color: $brownish-orange-two;
+  }
 }
 
 .vertical-line {
